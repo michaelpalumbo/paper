@@ -1,34 +1,14 @@
 
-When working on a project, the ability to keep track of changes made by an author over time is essential to many facets of creation, including revision, editing, making drafts, feedback, and collaboration. In the field of software engineering, the archival of software source code and project collaborator contributions is made possible by a system referred to as version control. As of late 2016, the most popular public service offering version control is Github.com, which hosts over 21 million projects in the cloud as publicly available repositories. This facilitates unprecedented knowledge sharing and mass collaboration, and affords analysis of the interdependence of creators and artefacts, and how these entities interact over the life spans of projects.
+When working on a project, the ability to keep track of changes made by an author over time is essential to many facets of creation, including revision, editing, making drafts, feedback, and collaboration. In the field of software engineering, the archival of software source code and project collaborator contributions is made possible by a system referred to as version control. As of late 2016, the most popular public service offering version control is Github.com, which hosts over 21 million projects in the cloud as publicly available repositories. This facilitates unprecedented knowledge sharing and mass collaboration, and affords insight on the interdependence of creators and artefacts, and how these entities interact over the life spans of projects.
 
-However, such systems are not limited solely to the indexing of code, as most file extensions may be archived and tracked, including those commonly used in writing and research, such as .docx, .xls, and .txt. 
+However, such systems are not limited solely to the indexing of code, as most file extensions may be archived and tracked, including those often used in writing and research, such as .docx, .xls, and .txt. 
 
-Git stores all elements associated with a project — be it PDFs annotated by the author, drafts, discarded changes, etc. — in a public repository. Using git as both an archival and revision tool, this paper as a work-in-progress is currently hosted at http://github.com/michaelpalumbo/paper , and will be written following a workflow where each change made to any file in the repository will be logged in what is referred to as the ‘commit history’ and will be accompanied by a comment containing a description of the change and reason(s) for its occurrence. As an example of a commit pertaining to the inclusion of this sentence, see https://github.com/michaelpalumbo/paper/commit/b526cf4a08254daac14d660743f3388b352b6bf0 .
+Git stores all elements associated with a project — be it PDFs annotated by the author, drafts, discarded drafts, edits, etc. — in a public repository. Using git as both an archival and revision tool, this paper as a work-in-progress is currently hosted at http://github.com/michaelpalumbo/paper , and is being composed with a rule that any change be logged in what is referred to as the ‘commit history’, and be accompanied by a comment containing a description of the change and reason(s) for its occurrence. As an example of a commit pertaining to the inclusion of this very sentence, see https://github.com/michaelpalumbo/paper/commit/b526cf4a08254daac14d660743f3388b352b6bf0 .
  
-This is significant in that the author has in past solo endeavors opted to work in very long sprints between documentation. What documentation does emerge from these processes is at most frequent made in haste following the end of a session. This coarse degree of resolution hinders future effort to speculate on decisions made and to imagine recourse for ongoing work. Further, it has been the experience of this author that such an opaque visibility of the decision-making in a creative work impedes its opening up to future collaboration.
+This is significant in that the author has in past solo endeavours opted to work in very long sprints between documentation. What documentation does emerge from these processes is at most frequent made in haste following the end of a session. This coarse degree of resolution hinders future effort to speculate on decisions made and to imagine recourse for ongoing work. Further, it has been the experience of this author that such an opaque visibility of the decision-making in a creative work impedes its opening up to future collaboration. The author posits that the the increased frequency of work contribution segmentation coincide with greater reflexivity in process, and aid in cognitive load. 
 
-Drawing on literature from the Performance and Culture course, including Lavender, Bay-Cheng, Harvie, and Taylor, this paper presents a vision towards the use of version control systems and repository mining in the contexts of performance studies and creativity research, and will leverage git as a research-creation tool in presenting a detailed account of this paper’s own ontogenesis, such as excerpts from the author’s commit comments; visualizations of the comparison of changes; and trends in the author’s process, including attentional detail and affect. 
-
-
-Any documentation of the process is often  and if commentary or documentation is undertaken,  between commits. This means that the degree of resolution in the data about the work being done is at best opaque, and a commit is typically only made in haste at the end of a work session. I am so far finding that segmenting my contributions at a much more frequent rate — at this point after every 2-3 sentences, and whenever switching tasks or ideas — is in fact leading to greater reflexivity in my process, and aiding in cognitive load. 
-
-
-This paper will be written using the following workflow: each time a change is made to any part of the working directory — for example, this sentence — the change will be logged using a ‘git commit’, and paired with a comment describing the change and reason. 
+Drawing on literature from the Performance and Culture course, including Lavender, Bay-Cheng, Harvie, and Taylor, this paper presents a vision towards the use of version control systems and repository mining in the contexts of performance studies and creativity research, and will leverage git as a research-creation tool in presenting a detailed account of this paper’s own ontogenesis, such as: excerpts from the author’s commit comments; visualizations of the comparison of changes; and trends in the author’s process, including attentional detail and affect. 
 
 
 
 
-of the work-in-progress at any stage of of the which can be leveraged to produce, for example, visualizations of the 
-
-the author the ability to prepare visualizations of the work-in-progress at any point in the project’s timeline, the ontogenesis of the work, including he history of the changes made to drafts, document habits of the writer, the process, and t 
-
-the end of the process, will net a 
-introduce git, 
-
-usage of git as a writing tool
-
- citing of publicly available software source code as a supplement to a published work is becoming a common practice in computer music research, and the broader fields of digital media and the sciences, the impacts of implementing a version control system and social network — like that of GitHub.com — on the performance laboratory context have not been explicitly studied or discussed. In view of this, this paper will be an exploration of the use of a decentralized version control system for use as an archival performance. 
-
-
-
-In October 2016, the Distributed Performance and Sensorial Immersion Lab set up a git private repository to…
