@@ -6,3 +6,7 @@ Paper’s focus on the potential usefulness of repositories as archives and towa
 
 so the background of this paper, will be to introduce repositories. 
 
+
+The archival of software source code and project contributions is made possible by a system known as version control, with the most popular public service in use being Github.com, which as of late 2016 had over 21 million publicly hosted projects. 
+
+ citing of publicly available software source code as a supplement to a published work is becoming a common practice in computer music research, and the broader fields of digital media and the sciences, the impacts of implementing a version control system and social network — like that of GitHub.com — on the performance laboratory context have not been explicitly studied or discussed. In view of this, this paper will be an exploration of the use of a decentralized version control system for use as an archival performance. 
