@@ -16,10 +16,11 @@ The following workflow has been adopted for the composition of this paper: Each 
 
 This is significant in that the author has in past solo endeavors opted to work in very long sprints between documentation. What documentation does emerge from these processes is at most frequent made in haste following the end of a session. This coarse degree of resolution hinders future effort to speculate on decisions made and to imagine recourse for ongoing work. Further, it has been the experience of this author that such an opacity toward creative decision-making impedes the opening up of a given project to future collaboration. 
 
-In addition to developing an analysis of version control systems in the context of archival and performance studies, this paper will leverage git as a research-creation tool by presenting a detailed account of its own ontogenesis. 
+In addition to developing an analysis of version control systems in the contexts of archival and performance studies, this paper will leverage git as a research-creation tool by presenting a detailed account of its own ontogenesis. 
 
  and may make use of: excerpts from the author’s comments about a change to a draft; visualizations of the comparison of changes; and trends in the author’s process, including attentional detail and affect. 
 
+what is missing is the theory from the class!
 
 
 
