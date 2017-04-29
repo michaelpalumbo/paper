@@ -1,0 +1,1 @@
+to exit a git log report, type ‘q’

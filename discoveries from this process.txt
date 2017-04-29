@@ -1,0 +1,5 @@
+discoveries from this process:
+
+at commit https://github.com/michaelpalumbo/paper/commit/56de6878cf14df906aeb4f40b3f6130dcf2d2d58
+
+I started writing a comment about how the proposal is lacking in theory from the class. then i started folding in theory from the class into the commit message, initially as an example, which then turned into writing a note to myself, and then I gained steam and now have a decent sense of direction for the P&C research. so the commit message can be a useful tool unto itself for research. Maybe you can cite Matthew Gaudet’s mention of interest in the commit history and narrative… 
