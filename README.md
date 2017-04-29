@@ -1,8 +1,4 @@
 
-
-## Welcome to GitHub Pages - see the file you created "~/github_page_ref.md" for instructions on how to maintain this page
-
-
 # Background
 
 This paper presents a vision towards the use of version control systems and repository mining in the contexts of performance studies and creativity research, and will leverage git as a research-creation tool in presenting a detailed account of this paper’s own ontogenesis, such as: excerpts from the author’s commit comments; visualizations of the comparison of changes; and trends in the author’s process, including attentional detail and affect. 
