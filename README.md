@@ -1,8 +1,15 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/michaelpalumbo/paper/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Welcome to GitHub Pages - see the file you created "~/github_page_ref.md" for instructions on how to maintain this page
+
+
+# Background
+
+This paper presents a vision towards the use of version control systems and repository mining in the contexts of performance studies and creativity research, and will leverage git as a research-creation tool in presenting a detailed account of this paper’s own ontogenesis, such as: excerpts from the author’s commit comments; visualizations of the comparison of changes; and trends in the author’s process, including attentional detail and affect. 
+
+The finished version of this papge will be the paper, including hypertext, tables, and embedded video of vizualizations. 
+
+Below is the template provided by github to help me build this paper using markdown!
 
 ### Markdown
 
@@ -11,7 +18,6 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-# Header 1
 ## Header 2
 ### Header 3
 
