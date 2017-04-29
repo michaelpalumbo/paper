@@ -1,1 +1,3 @@
 A research paper on using a distributed version control system to write a paper. As an archive, it presents interesting use 
+
+I will use a number of statistics gathering tools to track details about my activity when writing this paper. For instance, I will get a record of time spent using each app on my machine during paper-writing sessions. 
