@@ -12,7 +12,7 @@ after detailing some of git’s features, then:
 
 Applying as a research-creation tool, this paper will present a detailed account of the ontogenesis of the project, which may include: excerpts from the author’s comments about a change to a draft; visualizations comparing changes to the work; trends in the author’s process, including attentional detail and affect; 
 
-This paper will be written using the following workflow: each time a change is made to any part of the working directory — for example, this sentence — the change will be logged using a ‘git commit’, and paired with a comment describing the change and reason. 
+This paper will be written using the following workflow: each time a change is made to any part of the working directory — for example, this sentence — the change will be logged using a ‘git commit’, and paired with a comment describing the change and reason. This is significant for several reasons: [1] the author typically has, in the past, preferred to work in very long sprints between commits. This means that the degree of resolution in the data about the work being done is at best opaque, and a commit is typically only made in haste at the end of a work session. I am so far finding that segmenting my contributions at a much more frequent rate — at this point after every 2-3 sentences, and whenever switching tasks or ideas — is in fact leading to greater reflexivity in my process, and aiding in cognitive load. 
 
 
 
