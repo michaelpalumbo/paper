@@ -1,10 +1,4 @@
-A research paper on using a distributed version control system to write a paper. As an archive, it presents interesting use 
 
-I will use a number of statistics gathering tools to track details about my activity when writing this paper. For instance, I will get a record of time spent using each app on my machine during paper-writing sessions. 
-
-Paper’s focus on the potential usefulness of repositories as archives and towards scaffolding of collaborations. 
-
-so the background of this paper, will be to introduce repositories. 
 
 
 The archival of software source code and project collaborator contributions is made possible by a system known as version control, with the most popular public service in use being Github.com, which as of late 2016 had over 21 million publicly hosted projects. 
@@ -21,8 +15,10 @@ In addition to developing an analysis of version control systems in the contexts
  and may make use of: excerpts from the author’s comments about a change to a draft; visualizations of the comparison of changes; and trends in the author’s process, including attentional detail and affect. 
 
 what is missing is the theory from the class!
+see commit comment https://github.com/michaelpalumbo/paper/commit/56de6878cf14df906aeb4f40b3f6130dcf2d2d58
 
 
+Also want to mention that 
 
 , , and typically only made in haste at the end of a work session, or even less-frequently. 
 
