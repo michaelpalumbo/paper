@@ -7,6 +7,26 @@ Paper’s focus on the potential usefulness of repositories as archives and towa
 so the background of this paper, will be to introduce repositories. 
 
 
-The archival of software source code and project contributions is made possible by a system known as version control, with the most popular public service in use being Github.com, which as of late 2016 had over 21 million publicly hosted projects. 
+The archival of software source code and project collaborator contributions is made possible by a system known as version control, with the most popular public service in use being Github.com, which as of late 2016 had over 21 million publicly hosted projects. 
+after detailing some of git’s features, then:
+
+Applying as a research-creation tool, this paper will present a detailed account of the ontogenesis of the project, which may include: excerpts from the author’s comments about a change to a draft; visualizations comparing changes to the work; trends in the author’s process, including attentional detail and affect; 
+
+This paper will be written using the following workflow: each time a change is made to any part of the working directory — for example, this sentence — the change will be logged using a ‘git commit’, and paired with a comment describing the change and reason. 
+
+
+
+of the work-in-progress at any stage of of the which can be leveraged to produce, for example, visualizations of the 
+
+the author the ability to prepare visualizations of the work-in-progress at any point in the project’s timeline, the ontogenesis of the work, including he history of the changes made to drafts, document habits of the writer, the process, and t 
+
+the end of the process, will net a 
+introduce git, 
+
+usage of git as a writing tool
 
  citing of publicly available software source code as a supplement to a published work is becoming a common practice in computer music research, and the broader fields of digital media and the sciences, the impacts of implementing a version control system and social network — like that of GitHub.com — on the performance laboratory context have not been explicitly studied or discussed. In view of this, this paper will be an exploration of the use of a decentralized version control system for use as an archival performance. 
+
+
+
+In October 2016, the Distributed Performance and Sensorial Immersion Lab set up a git private repository to…
