@@ -1,4 +1,3 @@
-
 When working on a project, the ability to keep track of changes made by an author over time is essential to many facets of creation, including revision, editing, making drafts, feedback, and collaboration. In the field of software engineering, the archival of software source code and project collaborator contributions is made possible by a system referred to as version control. As of late 2016, the most popular public service offering version control is Github.com, which hosts over 21 million projects in the cloud as publicly available repositories. This facilitates unprecedented knowledge sharing and mass collaboration, and affords insight on the interdependence of creators and artefacts, and how these entities interact over the life spans of projects.
 
 However, such systems are not limited solely to the indexing of code, as most file extensions may be archived and tracked, including those often used in writing and research, such as .docx, .xls, and .txt. 
