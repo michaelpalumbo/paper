@@ -10,9 +10,26 @@ so the background of this paper, will be to introduce repositories.
 The archival of software source code and project collaborator contributions is made possible by a system known as version control, with the most popular public service in use being Github.com, which as of late 2016 had over 21 million publicly hosted projects. 
 after detailing some of git’s features, then:
 
-Applying as a research-creation tool, this paper will present a detailed account of the ontogenesis of the project, which may include: excerpts from the author’s comments about a change to a draft; visualizations comparing changes to the work; trends in the author’s process, including attentional detail and affect; 
 
-This paper will be written using the following workflow: each time a change is made to any part of the working directory — for example, this sentence — the change will be logged using a ‘git commit’, and paired with a comment describing the change and reason. This is significant for several reasons: [1] the author typically has, in the past, preferred to work in very long sprints between commits. This means that the degree of resolution in the data about the work being done is at best opaque, and a commit is typically only made in haste at the end of a work session. I am so far finding that segmenting my contributions at a much more frequent rate — at this point after every 2-3 sentences, and whenever switching tasks or ideas — is in fact leading to greater reflexivity in my process, and aiding in cognitive load. 
+
+The following workflow has been adopted for the composition of this paper: Each change  made to any file in the repository will be logged in the commit history and accompanied by a comment containing a description of the change and reason(s) for its occurrence. See git pointer https://github.com/michaelpalumbo/paper/commit/b526cf4a08254daac14d660743f3388b352b6bf0, for example. 
+
+This is significant in that the author has in past solo endeavors opted to work in very long sprints between documentation. What documentation does emerge from these processes is at most frequent made in haste following the end of a session. This coarse degree of resolution hinders future effort to speculate on decisions made and to imagine recourse for ongoing work. Further, it has been the experience of this author that such an opacity toward creative decision-making impedes the opening up of a given project to future collaboration. 
+
+In addition to developing an analysis of version control systems in the context of archival and performance studies, this paper will leverage git as a research-creation tool by presenting a detailed account of its own ontogenesis. 
+
+ and may make use of: excerpts from the author’s comments about a change to a draft; visualizations of the comparison of changes; and trends in the author’s process, including attentional detail and affect. 
+
+
+
+
+, , and typically only made in haste at the end of a work session, or even less-frequently. 
+
+Any documentation of the process is often  and if commentary or documentation is undertaken,  between commits. This means that the degree of resolution in the data about the work being done is at best opaque, and a commit is typically only made in haste at the end of a work session. I am so far finding that segmenting my contributions at a much more frequent rate — at this point after every 2-3 sentences, and whenever switching tasks or ideas — is in fact leading to greater reflexivity in my process, and aiding in cognitive load. 
+
+
+This paper will be written using the following workflow: each time a change is made to any part of the working directory — for example, this sentence — the change will be logged using a ‘git commit’, and paired with a comment describing the change and reason. 
+
 
 
 
