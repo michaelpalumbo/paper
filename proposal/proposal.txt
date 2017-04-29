@@ -1,16 +1,19 @@
 
+When working on a project, the ability to keep track of changes made by an author over time is essential to many facets of creation, including revision, editing, making drafts, feedback, and collaboration. In the field of software engineering, the archival of software source code and project collaborator contributions is made possible by a system referred to as version control. As of late 2016, the most popular public service offering version control is Github.com, which hosts over 21 million projects in the cloud as publicly available repositories. This facilitates unprecedented knowledge sharing and mass collaboration, and affords analysis of the interdependence of creators and artefacts, and how such entities interact over the life span of a project. 
 
+The field of mining software repositories has emerged to afford researchers insights into  into how creators and artefacts interact, and to what extent such entities are interdependent. 
 
-The archival of software source code and project collaborator contributions is made possible by a system known as version control, with the most popular public service in use being Github.com, which as of late 2016 had over 21 million publicly hosted projects. 
-after detailing some of git’s features, then:
+. An area of interdependent creative activities, to make sense of 
 
+ and , and how ideas and patterns of creative activity emerge, a process an area of study known as software repository mining. 
 
+However, such systems are not limited solely to the indexing of code, as most file extensions may be archived and tracked, including those commonly used in writing and research, such as .docx, .xls, and .txt. 
 
-The following workflow has been adopted for the composition of this paper: Each change  made to any file in the repository will be logged in the commit history and accompanied by a comment containing a description of the change and reason(s) for its occurrence. See git pointer https://github.com/michaelpalumbo/paper/commit/b526cf4a08254daac14d660743f3388b352b6bf0, for example. 
+The following workflow has been adopted for the composition of this paper: All elements of the project — papers annotated by the author, drafts, discarded changes, etc. — will be stored in a public repository, available at https://github.com/michaelpalumbo/paper . Each change made to any file in the repository will be logged in the commit history and accompanied by a comment containing a description of the change and reason(s) for its occurrence. See git pointer https://github.com/michaelpalumbo/paper/commit/b526cf4a08254daac14d660743f3388b352b6bf0, for example, detailing the inclusion of this sentence. 
+ 
+This is significant in that the author has in past solo endeavors opted to work in very long sprints between documentation. What documentation does emerge from these processes is at most frequent made in haste following the end of a session. This coarse degree of resolution hinders future effort to speculate on decisions made and to imagine recourse for ongoing work. Further, it has been the experience of this author that such an opaque visibility of the decision-making in a creative work impedes its opening up to future collaboration. 
 
-This is significant in that the author has in past solo endeavors opted to work in very long sprints between documentation. What documentation does emerge from these processes is at most frequent made in haste following the end of a session. This coarse degree of resolution hinders future effort to speculate on decisions made and to imagine recourse for ongoing work. Further, it has been the experience of this author that such an opacity toward creative decision-making impedes the opening up of a given project to future collaboration. 
-
-In addition to developing an analysis of version control systems in the contexts of archival and performance studies, this paper will leverage git as a research-creation tool by presenting a detailed account of its own ontogenesis. 
+This paper presents a vision towards the use of version control systems and repository mining in the contexts of performance studies and creativity research, and will leverage git as a research-creation tool in presenting a detailed account of this paper’s own ontogenesis. 
 
  and may make use of: excerpts from the author’s comments about a change to a draft; visualizations of the comparison of changes; and trends in the author’s process, including attentional detail and affect. 
 
