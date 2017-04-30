@@ -1,2 +1,32 @@
-Collaboration on a software project requires that developers have concurrent access to source code. With this it becomes necessary to keep track of changes and, effectively manage how work and knowledge about the work-in-progress are shared, and to be able to move efficiently between updates to the source code. Version control systems (VCS) are employed by programmers to mitigate these issues by storing code in directories referred to as repositories, which hold details about the history of the project, contributions, and other useful metrics. (Bird et al. 2009) (Carlsson 2013) \emph{Centralized version control} systems, such as Subversion and Concurrent Versioning System [cite] host the code [at a single location, and_____], [cite], while \emph{decentralized version control} (DVC), such as git, operate on a peer-to-peer model, enabling all or part of a repository to be stored locally on all machines affiliated with the project, (O’Sullivan 2009) thereby facilitating temporally and geographically displaced contributions, offline work, and simultaneous document editing. (Kalliamvakou et al 2014) Github, a popular DVC platform built on top of git, offers developers with a cloud-based hosting service for project repositories. 
+When working on a project, the ability to keep track of changes made by an author over time, is essential to many facets of creation, including revision, editing, moving between drafts, collecting and implementing feedback. Collaboration demands further requirements such as facilitating concurrent access to the developing corpus of work, effectively managing how work and knowledge about the work-in-progress are shared, and to be able to move efficiently between drafts and revisions. 
+
+In the field of software engineering, version control systems (VCS) are employed by developers to mitigate these issues by storing code in digital archives — referred to as repositories — which contain details about the history of the project, contributions, and other useful metrics. (Bird et al. 2009) (Carlsson 2013) \emph{Centralized version control} systems, such as Subversion and Concurrent Versioning System [cite] host the code at a single remote location, permitting developers temporary access to a portion of the codebase for modification. [cite] 
+
+A more contemporary VCS is \emph{decentralized version control} (DVC), such as git, which operates on a peer-to-peer model, enabling the entire repository to be stored locally on all machines affiliated with the project, (O’Sullivan 2009) thereby facilitating temporally and geographically displaced contributions, offline work, and simultaneous document editing. (Kalliamvakou et al 2014) 
+
+As of late 2016, the most popular public DVC is Github.com, which hosts over 21 million publicly available repositories in the cloud. This facilitates unprecedented knowledge sharing and mass collaboration, and affords research access to rich datasets, about which insight can be gained over the interdependence of creators and artefacts, how these entities interact over the lifecycle of a project, and the propagation of ideas. 
+
+
 The DVC workflow comprises three primary actions: the retrieval of up-to-date code from the remote repository to a local repository on the developer’s machine, called a \emph{pull request}; the logging of the modification of work in the local repository, called a \emph{commit}; and the uploading of files staged in commits, called a \emph{push}. 
+
+
+ the archival of software source code and project collaborator contributions is made possible by a tool referred to as version control systems (VCS)
+
+ at times in a  to this dynamic by requiring participants have access to this developing corpus of work.
+
+ In online collaboration, access to a project is distributed  at time concurrently, and at other times concurrent access to source code.
+
+When it comes to collaboration and collaboration.
+
+all or part of a repository to be stored locally on all machines affiliated with the project, 
+
+ 
+
+
+
+Github, a popular DVC platform built on top of git, offers developers with a cloud-based hosting service for project repositories. 
+
+
+ With this it becomes necessary to keep track of changes and 
+
+
