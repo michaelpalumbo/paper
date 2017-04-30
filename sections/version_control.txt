@@ -8,8 +8,8 @@ Built on top of git is Github.com, the most prominent service offering a DVC pla
 
 Of particular interest to performance studies scholarship is the curious fact that such systems are not limited solely to the indexing of code. Rather, most file extensions may be archived and tracked, including those used often in writing and research, such as .docx, .xls, and .txt. At this outset, the author hypothesizes that the ability to freely distribute an artwork-in-process and concurrently analyze its content and social [connectivity? network?] both quantitatively -- i.e. usage metrics, pattern recognition on the contents of the docs, etc -- and qualitatively -- i.e. ethnographic study of the commit messages, grounded theory analysis of issue or bug messages, etc -- is of fascinating consequence. [[weave in arguments from bay-cheng, lavender?]]
 
-As a corollary to this assertion of using git as both an archival and revision tool in non-software development practices, this paper as a work-in-progress is currently hosted at http://github.com/michaelpalumbo/paper , and is being composed along a rule that deems changes be committed frequently.  As an example of two commits pertaining to the development of this very sentence, see commit 0881828f4ad5578b870a7ba32773e28000c10b11
- , and then .
+As a corollary to this assertion of using git as both an archival and revision tool in non-software development practices, this paper as a work-in-progress is currently hosted at https://michaelpalumbo.github.io/paper/ , and is being composed along a rule that deems changes be committed frequently.  As an example of two commits pertaining to the development of this very sentence, see [commit 0881828f4ad5578b870a7ba32773e28000c10b11]
+ , and then [commit ed35d4f5016282efbc67a8cd7b6d81a0048a9217] . 
 
 Git stores all elements associated with a project — be it PDFs annotated by the author, drafts, discarded drafts, edits, etc. — in a public repository. 
 
