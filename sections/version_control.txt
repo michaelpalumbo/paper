@@ -2,14 +2,21 @@ When working on a project, the ability to keep track of changes made by an autho
 
 In the field of software engineering, version control systems (VCS) are employed by developers to mitigate these issues by storing code in digital archives — referred to as repositories — which contain details about the history of the project, contributions, and other useful metrics. (Bird et al. 2009) (Carlsson 2013) \emph{Centralized version control} systems, such as Subversion and Concurrent Versioning System [cite] host the code at a single remote location, permitting developers temporary access to a portion of the codebase for modification. [cite] 
 
-A more contemporary VCS is \emph{decentralized version control} (DVC), such as git, which operates on a peer-to-peer model, enabling the entire repository to be stored locally on all machines affiliated with the project, (O’Sullivan 2009) thereby facilitating temporally and geographically displaced contributions, offline work, and simultaneous document editing. (Kalliamvakou et al 2014) 
+A more contemporary VCS is \emph{decentralized version control} (DVC), such as git, which operates on a peer-to-peer model, enabling the entire repository to be stored locally on all machines affiliated with the project, (O’Sullivan 2009) thereby facilitating temporally and geographically displaced contributions, offline work, and simultaneous document editing. (Kalliamvakou et al 2014) The DVC workflow comprises three primary actions: the retrieval of up-to-date code from the remote repository to a local repository on the developer’s machine, called a \emph{pull request}; the logging of the modification of work in the local repository, called a \emph{commit}, which contains a description of the change and reason(s) for its occurrence, written by the person responsible for said change; and the uploading of files staged in commits, called a \emph{push}. 
 
 Built on top of git is Github.com, the most prominent service offering a DVC platform. As of late 2016, Github.com is host to over 21 million publicly available repositories in the cloud. Such access to open data facilitates unprecedented knowledge sharing and mass collaboration, and affords researchers access to rich datasets, about which insights can be gained over the interdependence of creators and artefacts, how these entities interact over the lifecycle of a project, and the propagation of ideas. 
 
-Of particular interest to performance studies scholarship is the curious fact that such systems are not limited solely to the indexing of code. Rather, most file extensions may be archived and tracked, including those often used in writing and research, such as .docx, .xls, and .txt. At this outset, the author hypothesizes that the ability to freely distribute an artwork-in-process and concurrently analyze its content and social [connectivity? network?] both quantitatively -- i.e. usage metrics, pattern recognition on the contents of the docs, etc -- and qualitatively -- i.e. ethnographic study of the commit messages, grounded theory analysis of issue or bug messages, etc -- is of fascinating consequence. [[weave in arguments from bay-cheng, lavender?]]
+Of particular interest to performance studies scholarship is the curious fact that such systems are not limited solely to the indexing of code. Rather, most file extensions may be archived and tracked, including those used often in writing and research, such as .docx, .xls, and .txt. At this outset, the author hypothesizes that the ability to freely distribute an artwork-in-process and concurrently analyze its content and social [connectivity? network?] both quantitatively -- i.e. usage metrics, pattern recognition on the contents of the docs, etc -- and qualitatively -- i.e. ethnographic study of the commit messages, grounded theory analysis of issue or bug messages, etc -- is of fascinating consequence. [[weave in arguments from bay-cheng, lavender?]]
 
-The DVC workflow comprises three primary actions: the retrieval of up-to-date code from the remote repository to a local repository on the developer’s machine, called a \emph{pull request}; the logging of the modification of work in the local repository, called a \emph{commit}; and the uploading of files staged in commits, called a \emph{push}. 
+As a corollary to this assertion of using git as both an archival and revision tool in non-software development practices, this paper as a work-in-progress is currently hosted at http://github.com/michaelpalumbo/paper , and is being composed along a rule that deems changes be committed frequently.  As an example of two commits pertaining to the development of this very sentence, see commit 0881828f4ad5578b870a7ba32773e28000c10b11
+ , and then .
 
+Git stores all elements associated with a project — be it PDFs annotated by the author, drafts, discarded drafts, edits, etc. — in a public repository. 
+
+
+
+
+logged, as often as possible, in what is referred to as the ‘commit history’, 
 
  the archival of software source code and project collaborator contributions is made possible by a tool referred to as version control systems (VCS)
 
@@ -29,5 +36,8 @@ Github, a popular DVC platform built on top of git, offers developers with a clo
 
 
  With this it becomes necessary to keep track of changes and 
+
+
+Further, other traces of creator-artefact and creator-creator interactions are also recorded, such as 
 
 
