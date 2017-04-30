@@ -4,8 +4,9 @@ In the field of software engineering, version control systems (VCS) are employed
 
 A more contemporary VCS is \emph{decentralized version control} (DVC), such as git, which operates on a peer-to-peer model, enabling the entire repository to be stored locally on all machines affiliated with the project, (O’Sullivan 2009) thereby facilitating temporally and geographically displaced contributions, offline work, and simultaneous document editing. (Kalliamvakou et al 2014) 
 
-As of late 2016, the most popular public DVC is Github.com, which hosts over 21 million publicly available repositories in the cloud. This facilitates unprecedented knowledge sharing and mass collaboration, and affords research access to rich datasets, about which insight can be gained over the interdependence of creators and artefacts, how these entities interact over the lifecycle of a project, and the propagation of ideas. 
+Built on top of git is Github.com, the most prominent service offering a DVC platform. As of late 2016, Github.com is host to over 21 million publicly available repositories in the cloud. Such access to open data facilitates unprecedented knowledge sharing and mass collaboration, and affords researchers access to rich datasets, about which insights can be gained over the interdependence of creators and artefacts, how these entities interact over the lifecycle of a project, and the propagation of ideas. 
 
+Of particular interest to performance studies scholarship is the curious fact that such systems are not limited solely to the indexing of code. Rather, most file extensions may be archived and tracked, including those often used in writing and research, such as .docx, .xls, and .txt. 
 
 The DVC workflow comprises three primary actions: the retrieval of up-to-date code from the remote repository to a local repository on the developer’s machine, called a \emph{pull request}; the logging of the modification of work in the local repository, called a \emph{commit}; and the uploading of files staged in commits, called a \emph{push}. 
 
