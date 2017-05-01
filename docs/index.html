@@ -23,6 +23,17 @@
 
         The finished version of this papge will be the paper, including hypertext, tables, and embedded video of vizualizations.
       </p>
+
+      <p>
+        When working on a project, the ability to keep track of changes made by a creator over time, is essential to many facets of production, including revision, editing, moving between drafts, collecting and implementing feedback. Collaboration demands further scaffolding of communication and distributed activity, such as facilitating concurrent access to the developing corpus of work, effectively managing how work and knowledge about the work-in-progress are shared, and to be able to move efficiently between drafts and revisions. In the field of software engineering, version control systems (VCS) are employed by developers to mitigate these issues by storing code in digital archives — referred to as repositories — which contain details about the history of the project, contributions, and other useful metrics. (Bird et al. 2009) (Carlsson 2013) Drawing on literature from [[the Performance and Culture course including Lavender, Bay-Cheng, Harvie, and Taylor; distributed creativity, and mining software repositories (MSR)]] this paper presents a vision towards the use of version control systems and repository mining in the contexts of performance studies and distributed creativity research, and will leverage git as a research-creation tool in presenting a detailed account of this paper’s own ontogenesis, such as: excerpts from the author’s commit comments; visualizations of the comparison of changes; and trends in the author’s process, including attentional detail and affect. 
+      </p>
+
+       <p>
+
+      \emph{Centralized version control} systems, such as Subversion and Concurrent Versioning System [cite] host the code at a single remote location, permitting developers temporary access to a portion of the codebase for modification. [cite]             
+      </p>
+
+   
       <!---<p>
         Adding/staging your files for commit will not be covered by this site. In all sandbox playgrounds
         on this site, just pretend that you always have files staged and ready to commit at all times.
@@ -34,6 +45,277 @@
         Sandboxes are split by specific git commands, listed below.
       </p>
       -->
+
+         <p>
+      A more recent VCS model is that of \emph{decentralized version control} (DVC), such as git, which operates on a peer-to-peer model, enabling the entire repository to be stored locally on all machines affiliated with the project, (O’Sullivan 2009) thereby facilitating temporally and geographically displaced contributions, offline work, and simultaneous document editing. (Kalliamvakou et al 2014) The DVC workflow in git comprises three primary actions: the retrieval of up-to-date code from the remote repository to a local repository on the developer’s machine, called a 'pull'
+
+      <!--<div id="ExplainGitPull-Container" class="twelvecol concept-container"> -->
+      <p>
+        A <span class="cmd">git pull</span> is a two step process that first does a <span class="cmd">git fetch</span>,
+        and then does a <span class="cmd">git merge</span> of the remote tracking branch associated with your current branch.
+        If you have no current branch, the process will stop after fetching.
+      </p>
+      <p>
+        If the argument "--rebase" was given by typing <span class="cmd">git pull --rebase</span>, the second step of
+        pull process will be a rebase instead of a merge. This can be set to the default behavior by configuration by typing:
+        <span class="cmd">git config branch.BRANCHNAME.rebase true</span>.
+      </p>
+      <div class="playground-container"></div>
+    </div>
+
+<script type="text/javascript">
+require(['explaingit'], function (explainGit) {
+    var examples = {
+        'commit': {
+            name: 'Commit',
+            height: 200,
+            baseLine: 0.4,
+            commitData: [
+                {id: 'e137e9b', tags: ['master']}
+            ],
+            initialMessage: 'Type git commit a few times.'
+        },
+        'branch': {
+            name: 'Branch',
+            baseLine: 0.6,
+            commitData: [
+                {id: 'e137e9b', tags: ['master']}
+            ]
+        },
+        'tag': {
+            name: 'Tag',
+            baseLine: 0.6,
+            commitData: [
+                {id: 'e137e9b', tags: ['master']}
+            ]
+        },
+        'checkout': {
+            name: 'Checkout',
+            height: 500,
+            commitData: [
+                {id: 'e137e9b'},
+                {id: 'bb92e0e', parent: 'e137e9b', tags: ['master']},
+                {id: 'e088135', parent: 'e137e9b', tags: ['dev']}
+            ],
+            initialMessage:
+                'Use git checkout, git branch, and git commit commands until you understand.'
+        },
+        'checkout-b': {
+            name: 'Checkout-b',
+            height: 500,
+            commitData: [
+                {id: 'e137e9b'},
+                {id: 'f5b32c8', parent: 'e137e9b'},
+                {id: 'bb92e0e', parent: 'f5b32c8', tags: ['master']},
+                {id: 'e088135', parent: 'e137e9b', tags: ['dev']}
+            ],
+            initialMessage:
+                'Use git checkout -b and git commit commands until you understand.'
+        },
+        'reset': {
+            name: 'Reset',
+            height: 200,
+            baseLine: 0.5,
+            commitData: [
+                {id: 'e137e9b'},
+                {id: '0e70093', parent: 'e137e9b'},
+                {id: '3e33afd', parent: '0e70093', tags: ['master']}
+            ],
+            initialMessage: 'Type "git reset HEAD^".'
+        },
+        'revert': {
+            name: 'Revert',
+            height: 200,
+            baseLine: 0.5,
+            commitData: [
+                {id: 'e137e9b'},
+                {id: '0e70093', parent: 'e137e9b'},
+                {id: '3e33afd', parent: '0e70093', tags: ['master']}
+            ],
+            initialMessage: 'Type "git revert 0e70093".'
+        },
+        'merge': {
+            name: 'Merge',
+            height: 500,
+            commitData: [
+                {id: 'e137e9b'},
+                {id: 'bb92e0e', parent: 'e137e9b', tags: ['master']},
+                {id: 'f5b32c8', parent: 'e137e9b', tags: ['ff']},
+                {id: 'e088135', parent: 'f5b32c8', tags: ['dev']}
+            ],
+            initialMessage:
+                'Type "git merge dev".'
+        },
+        'rebase': {
+            name: 'Rebase',
+            height: 500,
+            commitData: [
+                {id: 'e137e9b'},
+                {id: 'bb92e0e', parent: 'e137e9b', tags: ['master']},
+                {id: 'f5b32c8', parent: 'e137e9b'},
+                {id: 'e088135', parent: 'f5b32c8', tags: ['dev']}
+            ],
+            currentBranch: 'dev',
+            initialMessage:
+                'Type "git rebase master".'
+        },
+        'fetch': {
+            name: 'Fetch',
+            height: 500,
+            commitData: [
+                {id: 'e137e9b', tags: ['origin/master']},
+                {id: '6ce726f', parent: 'e137e9b'},
+                {id: 'bb92e0e', parent: '6ce726f', tags: ['master']},
+                {id: '0cff760', parent: 'e137e9b', tags: ['origin/dev']},
+                {id: '4ed301d', parent: '0cff760', tags: ['dev']}
+            ],
+            originData: [
+                {id: 'e137e9b'},
+                {id: '7eb7654', parent: 'e137e9b'},
+                {id: '090e2b8', parent: '7eb7654'},
+                {id: 'ee5df4b', parent: '090e2b8', tags: ['master']},
+                {id: '0cff760', parent: 'e137e9b'},
+                {id: '2f8d946', parent: '0cff760'},
+                {id: '29235ca', parent: '2f8d946', tags: ['dev']}
+            ],
+            initialMessage:
+                'Carefully compare the commit IDs between the origin and the local repository. ' +
+                'Then type "git fetch".'
+        },
+        'pull': {
+            name: 'Pull',
+            height: 500,
+            commitData: [
+                {id: 'e137e9b', tags: ['origin/master']},
+                {id: '46d095b', parent: 'e137e9b', tags: ['master']}
+            ],
+            originData: [
+                {id: 'e137e9b'},
+                {id: '7eb7654', parent: 'e137e9b'},
+                {id: '090e2b8', parent: '7eb7654'},
+                {id: 'ee5df4b', parent: '090e2b8', tags: ['master']}
+            ],
+            initialMessage:
+                'Carefully compare the commit IDs between the origin and the local repository. ' +
+                'Then type "git pull".'
+        },
+        'push': {
+            name: 'Push',
+            height: 500,
+            commitData: [
+                {id: 'e137e9b', tags: ['origin/master']},
+                {id: '46d095b', parent: 'e137e9b', tags: ['master']}
+            ],
+            originData: [
+                {id: 'e137e9b'},
+                {id: '7eb7654', parent: 'e137e9b', tags: ['master']}
+            ],
+            initialMessage:
+                'Carefully compare the commit IDs between the origin and the local repository. ' +
+                'Then type "git push".'
+        },
+        'clean': {
+            name: 'Clean',
+            height: 200,
+            baseLine: 0.4,
+            commitData: [
+                {id: 'e137e9b', tags: ['origin/master']},
+                {id: '0e70093', parent: 'e137e9b'},
+                {id: '3e33afd', parent: '0e70093', tags: ['master']}
+            ],
+            initialMessage: 'Type "git reset origin/master".'
+        },
+        'fetchrebase': {
+            name: 'FetchRebase',
+            height: 500,
+            commitData: [
+                {id: 'e137e9b', tags: ['origin/master', 'master']},
+                {id: '46d095b', parent: 'e137e9b'},
+                {id: 'dccdc4d', parent: '46d095b', tags: ['my-branch']}
+            ],
+            currentBranch: 'my-branch',
+            originData: [
+                {id: 'e137e9b'},
+                {id: '7eb7654', parent: 'e137e9b'},
+                {id: '090e2b8', parent: '7eb7654'},
+                {id: 'ee5df4b', parent: '090e2b8', tags: ['master']}
+            ],
+            initialMessage:
+                'First type "git fetch". Then type "git rebase origin/master".'
+        },
+        'deletebranches': {
+            name: 'DeleteBranches',
+            height: 500,
+            baseLine: 0.6,
+            commitData: [
+                {id: 'e137e9b'},
+                {id: 'bb92e0e', parent: 'e137e9b'},
+                {id: 'd25ee9b', parent: 'bb92e0e', tags: ['master']},
+                {id: '071ff28', parent: 'e137e9b', tags: ['protoss']},
+                {id: 'f5b32c8', parent: 'bb92e0e'},
+                {id: 'e088135', parent: 'f5b32c8', tags: ['zerg']},
+                {id: '9e6c322', parent: 'bb92e0e'},
+                {id: '593ae02', parent: '9e6c322', tags: ['terran']}
+            ],
+            currentBranch: 'terran',
+            initialMessage:
+                'Delete some branches.'
+        },
+        'freeplay': {
+            name: 'Free',
+            height: 500,
+            commitData: [
+                {id: 'e137e9b', tags: ['origin/master', 'master']}
+            ],
+            originData: [
+                {id: 'e137e9b'},
+                {id: '7eb7654', parent: 'e137e9b'},
+                {id: '090e2b8', parent: '7eb7654'},
+                {id: 'ee5df4b', parent: '090e2b8', tags: ['master']}
+            ],
+            initialMessage:
+                'Have fun.'
+        }
+    };
+
+    window.addEventListener('hashchange', open, false);
+    window.addEventListener('load', open, false);
+    
+    function open() {
+        var hash = window.location.hash.substr(1),
+            linkId = 'open-' + hash,
+            example = examples[hash];
+        
+        if (example) {
+            explainGit.reset();
+            document.getElementById(linkId).classList.add('selected');
+            explainGit.open(example);
+        } else if (hash === 'zen') {
+            var elements = document.getElementsByClassName('row');
+            for(var i = 0; i != elements.length; ++i)
+            {
+              elements[i].style.display = 'none';
+            }
+            document.getElementById('fork-me').style.display = 'none';
+            
+            explainGit.reset();
+
+            explainGit.open({
+                name: 'Zen',
+                height: '100%',
+                commitData: [
+                    {id: 'e137e9b', tags: ['master'], message: 'first commit'}
+                ],
+                initialMessage:
+                    'Have fun.'
+            });
+        }
+    }
+});
+</script>
+
+      the logging of the modification of work in the local repository, called a \emph{commit}, which contains a description of the change and reason(s) for its occurrence, written by the person responsible for said change; and the uploading of files staged in commits, called a \emph{push}. 
+      </p>
     </div>
   </div>
   <div class="row command-list">
@@ -70,18 +352,8 @@
   </div>
   <div class="row concept-area">
     <div id="ExplainGitCommit-Container" class="twelvecol concept-container">
-      <p>
-        When working on a project, the ability to keep track of changes made by a creator over time, is essential to many facets of production, including revision, editing, moving between drafts, collecting and implementing feedback. Collaboration demands further scaffolding of communication and distributed activity, such as facilitating concurrent access to the developing corpus of work, effectively managing how work and knowledge about the work-in-progress are shared, and to be able to move efficiently between drafts and revisions. In the field of software engineering, version control systems (VCS) are employed by developers to mitigate these issues by storing code in digital archives — referred to as repositories — which contain details about the history of the project, contributions, and other useful metrics. (Bird et al. 2009) (Carlsson 2013) Drawing on literature from [[the Performance and Culture course including Lavender, Bay-Cheng, Harvie, and Taylor; distributed creativity, and mining software repositories (MSR)]] this paper presents a vision towards the use of version control systems and repository mining in the contexts of performance studies and distributed creativity research, and will leverage git as a research-creation tool in presenting a detailed account of this paper’s own ontogenesis, such as: excerpts from the author’s commit comments; visualizations of the comparison of changes; and trends in the author’s process, including attentional detail and affect. 
-      </p>
 
-      <p>
-
-      \emph{Centralized version control} systems, such as Subversion and Concurrent Versioning System [cite] host the code at a single remote location, permitting developers temporary access to a portion of the codebase for modification. [cite]             
-      </p>
-
-      <p>
-      A more recent VCS model is that of \emph{decentralized version control} (DVC), such as git, which operates on a peer-to-peer model, enabling the entire repository to be stored locally on all machines affiliated with the project, (O’Sullivan 2009) thereby facilitating temporally and geographically displaced contributions, offline work, and simultaneous document editing. (Kalliamvakou et al 2014) The DVC workflow comprises three primary actions: the retrieval of up-to-date code from the remote repository to a local repository on the developer’s machine, called a \emph{pull request}; the logging of the modification of work in the local repository, called a \emph{commit}, which contains a description of the change and reason(s) for its occurrence, written by the person responsible for said change; and the uploading of files staged in commits, called a \emph{push}. 
-      </p>
+     
 
       <p>
       Built on top of git is Github.com, the most prominent service offering a DVC platform. As of late 2016, Github.com is host to over 21 million publicly available repositories in the cloud. Such access to open data facilitates unprecedented knowledge sharing and mass collaboration, and affords researchers access to rich datasets, about which insights can be gained over the interdependence of creators and artefacts, how these entities interact over the lifecycle of a project, and the propagation of ideas. 
