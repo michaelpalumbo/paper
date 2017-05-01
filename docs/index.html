@@ -39,20 +39,33 @@
       </p>
 
        <p>
-      A more recent VCS model is that of \emph{decentralized version control} (DVC), such as git, which operates on a peer-to-peer model, enabling the entire repository to be stored locally on all machines affiliated with the project, (O’Sullivan 2009) thereby facilitating temporally and geographically displaced contributions, offline work, and simultaneous document editing. (Kalliamvakou et al 2014) The DVC workflow in git comprises three primary actions: the retrieval of up-to-date code from the remote repository to a local repository on the developer’s machine, called a 'pull'
-       <a id="open-pull" class="openswitch" href="#pull">git pull</a>
+      A more recent VCS model is that of \emph{decentralized version control} (DVC), such as git, which operates on a peer-to-peer model, enabling the entire repository to be stored locally on all machines affiliated with the project, (O’Sullivan 2009) thereby facilitating temporally and geographically displaced contributions, offline work, and simultaneous document editing. (Kalliamvakou et al 2014) The DVC workflow in git comprises three primary actions: the retrieval of up-to-date code from the remote repository to a local repository on the developer’s machine, called a pull; the logging of the modification of work in the local repository, called a commit, which contains a description of the change and reason(s) for its occurrence, written by the person responsible for said change; and the uploading of files staged in commits, called a push. 
 
-      <!--<div id="ExplainGitPull-Container" class="twelvecol concept-container"> -->
-      
-
-      the logging of the modification of work in the local repository, called a \emph{commit}, which contains a description of the change and reason(s) for its occurrence, written by the person responsible for said change; 
-
-       <a id="open-commit" class="openswitch" href="#commit">git commit</a>
-
-      and the uploading of files staged in commits, called a \emph{push}. 
-
-      <a id="open-push" class="openswitch" href="#push">git push</a>
+      <h2>DVC</h2>
+      <img src="/images/DVC-model.jpg" alt="DVC-model" style="width:735px;height:233px;">
       </p>
+
+      <p>
+      Built on top of git is Github.com, the most prominent service offering a DVC platform. As of late 2016, Github.com is host to over 21 million publicly available repositories in the cloud. Such access to open data facilitates unprecedented knowledge sharing and mass collaboration, and affords researchers access to rich datasets, about which insights can be gained over the interdependence of creators and artefacts, how these entities interact over the lifecycle of a project, and the propagation of ideas. 
+      </p>
+
+      <p>
+      Of particular interest to performance studies scholarship is the curious fact that such systems are not limited solely to the indexing of code. Rather, most file extensions may be archived and tracked, including those used often in writing and research, such as .docx, .xls, and .txt. At this outset, the author hypothesizes that the ability to freely distribute an artwork-in-process and concurrently analyze its content and social [connectivity? network?] both quantitatively -- i.e. usage metrics, pattern recognition on the contents of the docs, etc -- and qualitatively -- i.e. ethnographic study of the commit messages, grounded theory analysis of issue or bug messages, etc -- is of fascinating consequence. [[weave in arguments from bay-cheng, lavender?]]
+      </p>
+
+      <p>
+      As a corollary to this assertion of using git as both an archival and revision tool in non-software development practices, this paper as a work-in-progress is currently hosted at https://michaelpalumbo.github.io/paper/ , and is being composed along a rule that deems changes be committed frequently. As an example of two commits pertaining to the development of this very sentence, see <a href="https://github.com/michaelpalumbo/self-referent/commit/ed35d4f5016282efbc67a8cd7b6d81a0048a9217" target="_blank">this commit</a>, and then compare with <a href="https://github.com/michaelpalumbo/self-referent/commit/41cdeac813edd0403299e30d0ac16207422fb165" target="_blank">this commit</a>
+
+      </p>
+      <p>
+      This is significant in that the author has in past solo endeavours opted to work in long sprints of activity between documentation. What documentation does emerge from these processes is at most frequent made in haste following the end of a session. This coarse degree of resolution hinders future effort to speculate on decisions made and to imagine recourse for ongoing work. Further, it has been the experience of this author that such an opaque visibility of the decision-making in a creative work impedes its opening up to future collaboration. [cite the following:] that increased frequency of work contribution segmentations coincide with greater reflexivity in process, and aid in cognitive load. [[Matthew Gaudet said that my “conversational commits … feel similar .. [to] ‘rubber duck’ debugging; the idea being you explain the problem to a rubber duck in your office and it helps you identify gaps in your thinking and solve the problem.” (private correspondence 2017-04-30)
+      </p>
+
+      <p>
+      Git stores all elements associated with a project — be it PDFs annotated by the author, drafts, discarded drafts, edits, etc. — in a public repository. 
+      </p>
+    
+
     </div>
 <!--  </div>
   <div class="row command-list">
@@ -90,6 +103,16 @@
     </div>
   </div>
 -->
+<p>
+
+The following is a useful visualization for learning about the basic workflow in git.
+Next to the '$' sign below, experiment with entering commands like 'git pull', 'git commit', 'git push', and 'git commit -m "added a sentence about Derrida'
+<a id="open-pull" class="openswitch" href="#pull">pull</a>
+
+       <a id="open-commit" class="openswitch" href="#commit">git commit</a>
+      <a id="open-push" class="openswitch" href="#push">git push</a>
+
+</p>
 
   <div class="row concept-area">
     <div id="ExplainGitCommit-Container" class="twelvecol concept-container">
@@ -142,7 +165,7 @@ require(['explaingit'], function (explainGit) {
             ],
             initialMessage: 'Type git commit a few times.'
         },
-        'branch': {
+        /*'branch': {
             name: 'Branch',
             baseLine: 0.6,
             commitData: [
@@ -248,7 +271,7 @@ require(['explaingit'], function (explainGit) {
             initialMessage:
                 'Carefully compare the commit IDs between the origin and the local repository. ' +
                 'Then type "git fetch".'
-        },
+        }, */
         'pull': {
             name: 'Pull',
             height: 500,
@@ -281,6 +304,7 @@ require(['explaingit'], function (explainGit) {
                 'Carefully compare the commit IDs between the origin and the local repository. ' +
                 'Then type "git push".'
         },
+        /*
         'clean': {
             name: 'Clean',
             height: 200,
@@ -342,7 +366,7 @@ require(['explaingit'], function (explainGit) {
             ],
             initialMessage:
                 'Have fun.'
-        }
+        } */
     };
 
     window.addEventListener('hashchange', open, false);
@@ -381,23 +405,6 @@ require(['explaingit'], function (explainGit) {
 });
 </script>
 
-<p>
-      Built on top of git is Github.com, the most prominent service offering a DVC platform. As of late 2016, Github.com is host to over 21 million publicly available repositories in the cloud. Such access to open data facilitates unprecedented knowledge sharing and mass collaboration, and affords researchers access to rich datasets, about which insights can be gained over the interdependence of creators and artefacts, how these entities interact over the lifecycle of a project, and the propagation of ideas. 
-      </p>
 
-      <p>
-      Of particular interest to performance studies scholarship is the curious fact that such systems are not limited solely to the indexing of code. Rather, most file extensions may be archived and tracked, including those used often in writing and research, such as .docx, .xls, and .txt. At this outset, the author hypothesizes that the ability to freely distribute an artwork-in-process and concurrently analyze its content and social [connectivity? network?] both quantitatively -- i.e. usage metrics, pattern recognition on the contents of the docs, etc -- and qualitatively -- i.e. ethnographic study of the commit messages, grounded theory analysis of issue or bug messages, etc -- is of fascinating consequence. [[weave in arguments from bay-cheng, lavender?]]
-      </p>
-
-      <p>
-      As a corollary to this assertion of using git as both an archival and revision tool in non-software development practices, this paper as a work-in-progress is currently hosted at https://michaelpalumbo.github.io/paper/ , and is being composed along a rule that deems changes be committed frequently. As an example of two commits pertaining to the development of this very sentence, see <a href="https://github.com/michaelpalumbo/self-referent/commit/ed35d4f5016282efbc67a8cd7b6d81a0048a9217">this commit</a>, and then compare with <a href="https://github.com/michaelpalumbo/self-referent/commit/41cdeac813edd0403299e30d0ac16207422fb165">this commit</a>
-      </p>
-      <p>
-      This is significant in that the author has in past solo endeavours opted to work in long sprints of activity between documentation. What documentation does emerge from these processes is at most frequent made in haste following the end of a session. This coarse degree of resolution hinders future effort to speculate on decisions made and to imagine recourse for ongoing work. Further, it has been the experience of this author that such an opaque visibility of the decision-making in a creative work impedes its opening up to future collaboration. [cite the following:] that increased frequency of work contribution segmentations coincide with greater reflexivity in process, and aid in cognitive load. [[Matthew Gaudet said that my “conversational commits … feel similar .. [to] ‘rubber duck’ debugging; the idea being you explain the problem to a rubber duck in your office and it helps you identify gaps in your thinking and solve the problem.” (private correspondence 2017-04-30)
-      </p>
-
-      <p>
-      Git stores all elements associated with a project — be it PDFs annotated by the author, drafts, discarded drafts, edits, etc. — in a public repository. 
-      </p>
 </body>
 </html>
