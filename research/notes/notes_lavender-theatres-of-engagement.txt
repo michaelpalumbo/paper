@@ -20,3 +20,6 @@ AH! page 18 gets into Foucault on history:
 perhaps this can be related to your question about segmentation (the resolution of detail in frequency and verbosity of commit messages) and the commit itself as a gesture:
 	“Derrida performed in his own writing the elusive nature of poststructuralist thought, which holds that language is (de)structured by gaps and slippages, and full of fissures through which constructs of truth and stability evaporate. It traps its users in delay, deferral, différance. Knowledge itself became an unstable commodity.” (18)
 	- and, it may be fun and worthy to explore the semantics of Derrida’s ‘différance’  and git ‘file diffs’ as per branches or forks? 
+
+“A similar tension runs through the book you are reading, between a sense that the theatres of engagement that I discuss mark a break from the ironic and decentrings of postmodernism, or alternatively a continuance through different artistic strategies of its larger project of dispersal and its insistence on context.”
+	- ‘dispersal and insistence on context’. just musing, but depending on how its used, the commit message may in fact be what binds artefact to context? it’d be worthwhile to do an ethnographic study on commit message practices at some point, maybe…
