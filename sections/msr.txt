@@ -1,0 +1,17 @@
+Analysis of github repository(s) (studying groups of use/or their work): Repository mining is a practice used by software researchers to study populations within the github network, and determine attributes such as community structure (Bird et al. 2008),  . [of relevance and interest to the media retrieval-side of the conference.] 
+Analysis of a github repo is useful because it affords researchers a view on the co-evolution of a project and its contributors, how workflows emerge and adapt to project goals, environmental conditions, and changes in personnel. See also this[ the empirical study on commits from computer music community may be interesting in this section!
+
+see in particular: 
+
+statistical analysis from project metadata. this is in section 3. 
+
+clone detection: 
+
+analyzing the software artifacts for clones:
+
+detection of clones in a software system can promote code reuse, refer novice programmers to existing related code, as well as locate software entities that may benefit from refactoring. 
+see [25-27] for clone detection algorithms. 
+
+see gold et al 38]
+
+Burlet and Hindle conducted a study on the use of [reword: software development practices of computer musicians when programming in] programming languages such as Max/MSP and Puredata. They highlight a need for further research into “how computer musicians program, share, and collaborate on patches developed in … languages [like] … Max/MSP. … [And] if computer musicians use software engineering tools such as source control repositories or bug trackers and where they seek help with programming syntax and semantics.” (1)
