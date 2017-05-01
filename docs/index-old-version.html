@@ -19,11 +19,6 @@
     <div class="twelvecol">
       <h1>Self-referent</h1>
       <p>
-
-      DISCLAIMER: I am currently experimenting with drawing on the <a href="http://onlywei.github.io/explain-git-with-d3/" target="_blank">explain-git-with-d3 library</a> by user OnlyWei. Some of this page was built using a fork of this library, and not all of it has been properly cited yet. 
-      </p>
-
-      <p>
         This paper presents a vision towards the use of version control systems and repository mining in the contexts of performance studies and creativity research, and will leverage git as a research-creation tool in presenting a detailed account of this paper’s own ontogenesis, such as: excerpts from the author’s commit comments; visualizations of the comparison of changes; and trends in the author’s process, including attentional detail and affect.
 
         The finished version of this papge will be the paper, including hypertext, tables, and embedded video of vizualizations.
@@ -38,27 +33,34 @@
       \emph{Centralized version control} systems, such as Subversion and Concurrent Versioning System [cite] host the code at a single remote location, permitting developers temporary access to a portion of the codebase for modification. [cite]             
       </p>
 
-       <p>
+   
+      <!---<p>
+        Adding/staging your files for commit will not be covered by this site. In all sandbox playgrounds
+        on this site, just pretend that you always have files staged and ready to commit at all times.
+        If you need a refresher on how to add or stage files for commit, please read
+        <a href="http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository">Git Basics</a>.
+      </p>
+
+      <p>
+        Sandboxes are split by specific git commands, listed below.
+      </p>
+      -->
+
+         <p>
       A more recent VCS model is that of \emph{decentralized version control} (DVC), such as git, which operates on a peer-to-peer model, enabling the entire repository to be stored locally on all machines affiliated with the project, (O’Sullivan 2009) thereby facilitating temporally and geographically displaced contributions, offline work, and simultaneous document editing. (Kalliamvakou et al 2014) The DVC workflow in git comprises three primary actions: the retrieval of up-to-date code from the remote repository to a local repository on the developer’s machine, called a 'pull'
        <a id="open-pull" class="openswitch" href="#pull">git pull</a>
 
       <!--<div id="ExplainGitPull-Container" class="twelvecol concept-container"> -->
       
 
-      the logging of the modification of work in the local repository, called a \emph{commit}, which contains a description of the change and reason(s) for its occurrence, written by the person responsible for said change; 
-
-       <a id="open-commit" class="openswitch" href="#commit">git commit</a>
-
-      and the uploading of files staged in commits, called a \emph{push}. 
-
-      <a id="open-push" class="openswitch" href="#push">git push</a>
+      the logging of the modification of work in the local repository, called a \emph{commit}, which contains a description of the change and reason(s) for its occurrence, written by the person responsible for said change; and the uploading of files staged in commits, called a \emph{push}. 
       </p>
     </div>
-<!--  </div>
+  </div>
   <div class="row command-list">
     <div class="twocol">
       <h4>Basic Commands</h3>
-     
+      <a id="open-commit" class="openswitch" href="#commit">git commit</a>
       <a id="open-branch" class="openswitch" href="#branch">git branch</a>
     </div>
     <div class="twocol">
@@ -76,31 +78,172 @@
       <a id="open-merge" class="openswitch" href="#merge">git merge</a>
       <a id="open-rebase" class="openswitch" href="#rebase">git rebase</a>
     </div>
-    <!--<div class="twocol">
+    <div class="twocol">
       <h4>Remote Server</h4>
       <a id="open-fetch" class="openswitch" href="#fetch">git fetch</a>
-    
+      <p>A more recent VCS model is that of \emph{decentralized version control} (DVC), such as git, which operates on a peer-to-peer model, enabling the entire repository to be stored locally on all machines affiliated with the project, (O’Sullivan 2009) thereby facilitating temporally and geographically displaced contributions, offline work, and simultaneous document editing. (Kalliamvakou et al 2014) The DVC workflow in git comprises three primary actions: the retrieval of up-to-date code from the remote repository to a local repository on the developer’s machine, called a 'pull'
       </p>
       <a id="open-pull" class="openswitch" href="#pull">git pull</a>
-    </div> 
+    </div>
     <div class="twocol last">
       <h4>&nbsp;</h4>
-      
+      <a id="open-push" class="openswitch" href="#push">git push</a>
       <a id="open-tag" class="openswitch" href="#tag">git tag</a>
     </div>
   </div>
--->
-
   <div class="row concept-area">
     <div id="ExplainGitCommit-Container" class="twelvecol concept-container">
 
+     
+
+      <p>
+      Built on top of git is Github.com, the most prominent service offering a DVC platform. As of late 2016, Github.com is host to over 21 million publicly available repositories in the cloud. Such access to open data facilitates unprecedented knowledge sharing and mass collaboration, and affords researchers access to rich datasets, about which insights can be gained over the interdependence of creators and artefacts, how these entities interact over the lifecycle of a project, and the propagation of ideas. 
+      </p>
+
+      <p>
+      Of particular interest to performance studies scholarship is the curious fact that such systems are not limited solely to the indexing of code. Rather, most file extensions may be archived and tracked, including those used often in writing and research, such as .docx, .xls, and .txt. At this outset, the author hypothesizes that the ability to freely distribute an artwork-in-process and concurrently analyze its content and social [connectivity? network?] both quantitatively -- i.e. usage metrics, pattern recognition on the contents of the docs, etc -- and qualitatively -- i.e. ethnographic study of the commit messages, grounded theory analysis of issue or bug messages, etc -- is of fascinating consequence. [[weave in arguments from bay-cheng, lavender?]]
+      </p>
+
+      <p>
+      As a corollary to this assertion of using git as both an archival and revision tool in non-software development practices, this paper as a work-in-progress is currently hosted at https://michaelpalumbo.github.io/paper/ , and is being composed along a rule that deems changes be committed frequently. As an example of two commits pertaining to the development of this very sentence, see <a href="https://github.com/michaelpalumbo/self-referent/commit/ed35d4f5016282efbc67a8cd7b6d81a0048a9217">this commit</a>, and then compare with <a href="https://github.com/michaelpalumbo/self-referent/commit/41cdeac813edd0403299e30d0ac16207422fb165">this commit</a>
+      </p>
+      <p>
+      This is significant in that the author has in past solo endeavours opted to work in long sprints of activity between documentation. What documentation does emerge from these processes is at most frequent made in haste following the end of a session. This coarse degree of resolution hinders future effort to speculate on decisions made and to imagine recourse for ongoing work. Further, it has been the experience of this author that such an opaque visibility of the decision-making in a creative work impedes its opening up to future collaboration. [cite the following:] that increased frequency of work contribution segmentations coincide with greater reflexivity in process, and aid in cognitive load. [[Matthew Gaudet said that my “conversational commits … feel similar .. [to] ‘rubber duck’ debugging; the idea being you explain the problem to a rubber duck in your office and it helps you identify gaps in your thinking and solve the problem.” (private correspondence 2017-04-30)
+      </p>
+
+      <p>
+      Git stores all elements associated with a project — be it PDFs annotated by the author, drafts, discarded drafts, edits, etc. — in a public repository. 
+      </p>
       <p>
         Pretend that you already have your files staged for commit and enter <span class="cmd">git commit</span>
         as many times as you like in the terminal box.
       </p>
       <div class="playground-container"></div>
     </div>
-    
+    <div id="ExplainGitTag-Container" class="twelvecol concept-container">
+      <p>
+        <span class="cmd">git tag name</span> will create a new tag named "name".
+        Creating tags just creates a new tag pointing to the currently checked out commit.
+      </p>
+      <p>
+        Tags can be deleted using the command <span class="cmd">git tag -d name</span> (coming soon).
+      </p>
+      <p>
+        Type <span class="cmd">git commit</span> and <span class="cmd">git tag</span> commands
+        to your hearts desire until you understand this concept.
+      </p>
+      <div class="playground-container"></div>
+    </div>
+    <div id="ExplainGitBranch-Container" class="twelvecol concept-container">
+      <p>
+        <span class="cmd">git branch name</span> will create a new branch named "name".
+        Creating branches just creates a new tag pointing to the currently checked out commit.
+      </p>
+      <p>
+        Branches can be deleted using the command <span class="cmd">git branch -d name</span>.
+      </p>
+      <p>
+        Type <span class="cmd">git commit</span> and <span class="cmd">git branch</span> commands
+        to your hearts desire until you understand this concept.
+      </p>
+      <div class="playground-container"></div>
+    </div>
+    <div id="ExplainGitCheckout-Container" class="twelvecol concept-container">
+      <p>
+        <span class="cmd">git checkout</span> has many uses,
+        but the main one is to switch between branches.</br>
+        For example, to switch from master branch to dev branch,
+        I would type <span class="cmd">git checkout dev</span>.
+        After that, if I do a git commit, notice where it goes. Try it.
+      </p>
+      <p>
+        In addition to checking out branches, you can also checkout individual commits. Try it.</br>
+        Make a new commit and then type <span class="cmd">git checkout bb92e0e</span>
+        and see what happens.
+      </p>
+      <p>
+        Type <span class="cmd">git commit</span>, <span class="cmd">git branch</span>,
+        and <span class="cmd">git checkout</span> commands to your hearts desire
+        until you understand this concept.
+      </p>
+      <div class="playground-container"></div>
+    </div>
+    <div id="ExplainGitCheckout-b-Container" class="twelvecol concept-container">
+      <p>
+        You can combine <span class="cmd">git branch</span> and <span class="cmd">git checkout</span>
+        into a single command by typing <span class="cmd">git checkout -b branchname</span>.
+        This will create the branch if it does not already exist and immediately check it out.
+      </p>
+      <div class="playground-container"></div>
+    </div>
+    <div id="ExplainGitReset-Container" class="twelvecol concept-container">
+      <p>
+        <span class="cmd">git reset</span> will move HEAD and the current branch back to wherever
+        you specify, abandoning any commits that may be left behind. This is useful to undo a commit
+        that you no longer need.
+      </p>
+      <p>
+        This command is normally used with one of three flags: "--soft", "--mixed", and "--hard".
+        The soft and mixed flags deal with what to do with the work that was inside the commit after
+        you reset, and you can read about it <a href="http://git-scm.com/2011/07/11/reset.html">here</a>.
+        Since this visualization cannot graphically display that work, only the "--hard" flag will work
+        on this site.
+      </p>
+      <p>
+        The ref "HEAD^" is usually used together with this command. "HEAD^" means "the commit right
+        before HEAD. "HEAD^^" means "two commits before HEAD", and so on.
+      </p>
+      <p>
+        Note that you must <b>never</b> use <span class="cmd">git reset</span> to abandon commits
+        that have already been pushed and merged into the origin. This can cause your local repository
+        to become out of sync with the origin. Don't do it unless you really know what you're doing.
+      </p>
+      <div class="playground-container"></div>
+    </div>
+    <div id="ExplainGitRevert-Container" class="twelvecol concept-container">
+      <p>
+        To undo commits that have already been pushed and shared with the team, we cannot use the
+        <span class="cmd">git reset</span> command. Instead, we have to use <span class="cmd">git revert</span>.
+      </p>
+      <p>
+        <span class="cmd">git revert</span> will create a new commit that will undo all of the work that
+        was done in the commit you want to revert.
+      </p>
+      <div class="playground-container"></div>
+    </div>
+    <div id="ExplainGitMerge-Container" class="twelvecol concept-container">
+      <p>
+        <span class="cmd">git merge</span> will create a new commit with two parents. The resulting
+        commit snapshot will have the all of the work that has been done in both branches.
+      </p>
+      <p>
+        If there was no divergence between the two commits, git will do a "fast-forward" method merge.</br>
+        To see this happen, checkout the 'ff' branch and then type <span class="cmd">git merge dev</span>.
+      </p>
+      <div class="playground-container"></div>
+    </div>
+    <div id="ExplainGitRebase-Container" class="twelvecol concept-container">
+      <p>
+        <span class="cmd">git rebase</span> will take the commits on this branch and "move" them so that their
+        new "base" is at the point you specify.
+      </p>
+      <p>
+        You should pay close attention to the commit IDs of the circles as they move when you do this exercise.
+      </p>
+      <p>
+        The reason I put "move" in quotations because this process actually generates brand new commits with
+        completely different IDs than the old commits, and leaves the old commits where they were. For this reason,
+        you never want to rebase commits that have already been shared with the team you are working with.
+      </p>
+      <div class="playground-container"></div>
+    </div>
+    <div id="ExplainGitFetch-Container" class="twelvecol concept-container">
+      <p>
+        <span class="cmd">git fetch</span> will update all of the "remote tracking branches" in your local repository.
+        Remote tracking branches are tagged in grey.
+      </p>
+      <div class="playground-container"></div>
+    </div>
     <div id="ExplainGitPull-Container" class="twelvecol concept-container">
       <p>
         A <span class="cmd">git pull</span> is a two step process that first does a <span class="cmd">git fetch</span>,
@@ -126,9 +269,85 @@
       </p>
       <div class="playground-container"></div>
     </div>
+    <div id="ExplainGitClean-Container" class="twelvecol concept-container">
+      <p>
+        One simple example of the use of <span class="cmd">git reset</span> is to completely restore your local repository
+        state to that of the origin.</br>
+        You can do so by typing <span class="cmd">git reset origin/master</span>.
+      </p>
+      <p>
+        Note that this won't delete untracked files, you will have to delete those separately with
+        the command <span class="cmd">git clean -df</span>.
+      </p>
+      <div class="playground-container"></div>
+    </div>
+    <div id="ExplainGitFetchRebase-Container" class="twelvecol concept-container">
+      <p>
+        Below is a situation in which you are working in a local branch that is all your own. You want to receive the latest code
+        from the origin server's master branch. To update your local branch, you can do it without having to switch branches!
+      </p>
+      <p>
+        First do a <span class="cmd">git fetch</span>, then type <span class="cmd">git rebase origin/master</span>!
+      </p>
+      <div class="playground-container"></div>
+    </div>
+    <div id="ExplainGitDeleteBranches-Container" class="twelvecol concept-container">
+      <p>
+        <span class="cmd">git branch -d</span> is used to delete branches.
+        I have pre-created a bunch of branches for you to delete in the playground below.
+        Have at it.
+      </p>
+      <div class="playground-container"></div>
+    </div>
+    <div id="ExplainGitFree-Container" class="twelvecol concept-container">
+      <p>
+        Do whatever you want in this free playground.
+      </p>
+      <div class="playground-container"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="twelvecol">
+      <h2>Specific Examples</h2>
+      <p>Below I have created some specific real-world scenarios that I feel are quite common and useful.</p>
+    </div>
+  </div>
+  <div class="row example-list">
+    <div class="tencol">
+      <a id="open-clean" class="openswitch" href="#clean">Restore Local Branch to State on Origin Server</a>
+      <a id="open-fetchrebase" class="openswitch" href="#fetchrebase">Update Private Local Branch with Latest from Origin</a>
+      <a id="open-deletebranches" class="openswitch" href="#deletebranches">Deleting Local Branches</a>
+    </div>
+    <div class="twocol last">
+      <a id="open-freeplay" class="openswitch" href="#freeplay">Free Playground</a>
+      <a id="open-zen" class="openswitch" href="#zen">Zen Mode</a>
+    </div>
   </div>
 </div>
 
+<div id="ExplainGitZen-Container" style="display:none">
+    <div class="playground-container"></div>
+</div>
+
+<svg version="1.1" baseProfile="full"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events"
+     width="0" height="0">
+
+    <marker id="triangle" refX="5" refY="5" markerUnits="strokeWidth" fill="#666"
+            markerWidth="4" markerHeight="3" orient="auto" viewBox="0 0 10 10">
+        <path d="M 0 0 L 10 5 L 0 10 z"/>
+    </marker>
+    <marker id="faded-triangle" refX="5" refY="5" markerUnits="strokeWidth" fill="#DDD"
+            markerWidth="4" markerHeight="3" orient="auto" viewBox="0 0 10 10">
+        <path d="M 0 0 L 10 5 L 0 10 z"/>
+    </marker>
+    <marker id="brown-triangle" refX="5" refY="5" markerUnits="strokeWidth" fill="#663300"
+            markerWidth="4" markerHeight="3" orient="auto" viewBox="0 0 10 10">
+        <path d="M 0 0 L 10 5 L 0 10 z"/>
+    </marker>
+</svg>
 
 <script type="text/javascript">
 require(['explaingit'], function (explainGit) {
@@ -380,24 +599,5 @@ require(['explaingit'], function (explainGit) {
     }
 });
 </script>
-
-<p>
-      Built on top of git is Github.com, the most prominent service offering a DVC platform. As of late 2016, Github.com is host to over 21 million publicly available repositories in the cloud. Such access to open data facilitates unprecedented knowledge sharing and mass collaboration, and affords researchers access to rich datasets, about which insights can be gained over the interdependence of creators and artefacts, how these entities interact over the lifecycle of a project, and the propagation of ideas. 
-      </p>
-
-      <p>
-      Of particular interest to performance studies scholarship is the curious fact that such systems are not limited solely to the indexing of code. Rather, most file extensions may be archived and tracked, including those used often in writing and research, such as .docx, .xls, and .txt. At this outset, the author hypothesizes that the ability to freely distribute an artwork-in-process and concurrently analyze its content and social [connectivity? network?] both quantitatively -- i.e. usage metrics, pattern recognition on the contents of the docs, etc -- and qualitatively -- i.e. ethnographic study of the commit messages, grounded theory analysis of issue or bug messages, etc -- is of fascinating consequence. [[weave in arguments from bay-cheng, lavender?]]
-      </p>
-
-      <p>
-      As a corollary to this assertion of using git as both an archival and revision tool in non-software development practices, this paper as a work-in-progress is currently hosted at https://michaelpalumbo.github.io/paper/ , and is being composed along a rule that deems changes be committed frequently. As an example of two commits pertaining to the development of this very sentence, see <a href="https://github.com/michaelpalumbo/self-referent/commit/ed35d4f5016282efbc67a8cd7b6d81a0048a9217">this commit</a>, and then compare with <a href="https://github.com/michaelpalumbo/self-referent/commit/41cdeac813edd0403299e30d0ac16207422fb165">this commit</a>
-      </p>
-      <p>
-      This is significant in that the author has in past solo endeavours opted to work in long sprints of activity between documentation. What documentation does emerge from these processes is at most frequent made in haste following the end of a session. This coarse degree of resolution hinders future effort to speculate on decisions made and to imagine recourse for ongoing work. Further, it has been the experience of this author that such an opaque visibility of the decision-making in a creative work impedes its opening up to future collaboration. [cite the following:] that increased frequency of work contribution segmentations coincide with greater reflexivity in process, and aid in cognitive load. [[Matthew Gaudet said that my “conversational commits … feel similar .. [to] ‘rubber duck’ debugging; the idea being you explain the problem to a rubber duck in your office and it helps you identify gaps in your thinking and solve the problem.” (private correspondence 2017-04-30)
-      </p>
-
-      <p>
-      Git stores all elements associated with a project — be it PDFs annotated by the author, drafts, discarded drafts, edits, etc. — in a public repository. 
-      </p>
 </body>
 </html>
