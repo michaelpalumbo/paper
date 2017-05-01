@@ -12,4 +12,11 @@ On cultural production:
 With significant events in history [Lavender cites 9/11, for example] came changes to “…the procedures (both cognitive and technical) by which we expressed our cultural engagement. They restructured our experience of and transaction with the real.” (15) 
 	- while this paper may not be interested in the ‘experience/transaction of the real’ it may be of future interest in distributed creativity within the lab context, so I left it in, but for now the previous sentence is of more interest.
 
- 
+on social media and the internet’s effect on bringing “the mass of the audience … [coming] under a spotlight of its own everyday positioning” (16)
+
+AH! page 18 gets into Foucault on history:
+	“Foucault’s writing disputed the notion of a linear development of history in favour of seeing histories as plural, while any historical analysis was a record of discourse, power and the discriminations of cultural practices.” (18)
+
+perhaps this can be related to your question about segmentation (the resolution of detail in frequency and verbosity of commit messages) and the commit itself as a gesture:
+	“Derrida performed in his own writing the elusive nature of poststructuralist thought, which holds that language is (de)structured by gaps and slippages, and full of fissures through which constructs of truth and stability evaporate. It traps its users in delay, deferral, différance. Knowledge itself became an unstable commodity.” (18)
+	- and, it may be fun and worthy to explore the semantics of Derrida’s ‘différance’  and git ‘file diffs’ as per branches or forks? 
