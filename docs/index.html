@@ -39,7 +39,21 @@
       </p>
 
        <p>
-       A popular DVC is git. With git, the DVC workflow comprises three primary actions: the retrieval of up-to-date code from the remote repository to a local repository on the developer’s machine, called a \emph{pull request}; the logging of the modification of work in the local repository, called a \emph{commit}, which contains a description of the change and reason(s) for its occurrence, written by the author of the change; and the uploading of files staged in commits, called a push. 
+       A popular DVC is git. The workflow used to write this paper with git can be distilled to four terminal commands: <i>git status</i>, <i>git pull</i>, <i>git add</i>, <i>git commit</i>, and <i>git push</i>, where:
+
+       <blockquote> 
+       git status reports the state of the local repository in comparison to the remote. 
+
+       </blockquote>
+       if any files have been changed in the local repository, the author can choose which ones to add to the remote repository, thereby taking the place as the newest version.
+
+       <blockquote> 
+       pull is the retrieval of the most-recent version of the master repository from the cloud to a local repository on the developer’s machine </blockquote>
+       <blockquote> after an author makes a change to a file in a repository, git will report this  add occurs after an author has made some changes to a file(s) within the repository 
+
+
+
+       , called a <i>pull request</i>; making some changes to a file or files within the repository, called a <i>modification</i>; the logging of the modification of work in the local repository, called a \emph{commit}, which contains a description of the change and reason(s) for its occurrence, written by the author of the change; and the uploading of files staged in commits, called a push. 
 
       <h2>DVC</h2>
       <img src="/images/DVC-model.jpg" alt="DVC-model" style="width:735px;height:233px;">
