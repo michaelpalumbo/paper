@@ -42,11 +42,11 @@
        A popular DVC is git. The workflow used to write this paper with git can be distilled to four terminal commands: <i>git status</i>, <i>git pull</i>, <i>git add</i>, <i>git commit</i>, and <i>git push</i>, where:
 
        <blockquote> 
-       git status reports the state of the local repository in comparison to the remote. 
+       <i>git status</i> reports the state of the local repository in comparison to the remote. 
 
        </blockquote>
-       if any files have been changed in the local repository, the author can choose which ones to add to the remote repository, thereby taking the place as the newest version.
-
+       if git status reports any changes to local files, <i>git add [filename]</i> tells git the name of the file to send to the remote as the newest version. <i>git add .</i> is a shortcut to add all modified files. 
+      
        <blockquote> 
        pull is the retrieval of the most-recent version of the master repository from the cloud to a local repository on the developer’s machine </blockquote>
        <blockquote> after an author makes a change to a file in a repository, git will report this  add occurs after an author has made some changes to a file(s) within the repository 
