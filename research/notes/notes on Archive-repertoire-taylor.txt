@@ -1,0 +1,19 @@
+“…we learn and transmit knowledge through embodied action, through cultural agency, and by making choices.” (XVI)
+
+“How can we think about performance in historical terms, when the archive cannot capture and store the live event?” (ibid)
+
+“Is performance that which disappears, or that which persists, transmitted through a non archival system of transfer that I came to cal the repertoire?” (XVII)
+
+I wonder about this statement about the ‘literate and powerful’ as experienced coders and/or closed-source/proprietary systems: Encuentros… “explore how performance transmits memories, makes political claims, and manifests a group’s sense of identity. For all of us, the political implications of the project were clear. If performance did not transmit knowledge, only the literate and powerful could claim social memory and identity.” (ibid)
+
+In Archive and the Repertoire, Taylor on Performance Studies AND Latin American Studies, is advocating for “…a real engagement between two fields that helps us rethink both.” (XVIII) I think that its important to ask this same question in my own paper, which is trying to look at the use of a digital archive for creative purposes outside of software design, but that its important to ask myself what engagement between perf studies and software repositories might there be?
+How does performance studies change how you think about working with VCS? how does cvs change how you think about TPS?
+
+“Or we might explore the relationship of embodied practice to knowledge by studying how young people today learn through digital technologies. [[see CSCL?!]] If people without writing are said to have vanished without a trace, how can we think about the invisibilized body onling? It is difficult to think about embodied practice within the epistemic systems developed in Western though, where writing has become the guarantor of existence itself.” (XIX)
+	- ‘Exploring how people learn through using digital technologies’ is a major mandate of the field of computer-supported collaborative work. CSCL is also branching into the study of the use of VCS like git in the classroom. 
+
+
+“…the production of knowledge is always a collective effort, a series of back-and-forth conversations that produce multiple results. … The document also finds its way into the public arena, where it is met with debates ranging from censorious disapproval to profound gratitude. Back and forth. The versions change with each transmission, and each creates slips, misses, and new interpretations that result in a somewhat new original. In this study too, I build on what I have received from others and attempt to contribute to the debate and pass it back into the public arena for more discussion. The slips and misses are, of course, my own.” (XX)
+	- distributed creativity would relate to this as “the production of knowledge … as a series of back-and-forth conversations that produce multiple results.” The one regret in the composition of this paper was that I do not yet have a community in github with whom I can have a back-and-forth exchange of ideas. 
+
+“Performances function as vital acts of transfer, transmitting social knowledge, memory, and a sense of identity through reiterated, or what Richard Schechner has called ‘twice-behaved behaviour.’3 ‘Performance,’ on one level, constitutes the object/process of analysis in performance studies…” (3) i.e. 
