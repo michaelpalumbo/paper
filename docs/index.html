@@ -31,22 +31,19 @@
       </p>
 
       <p>
-        When working on a project, the ability to keep track of changes made by a creator over time, is essential to many facets of production, including revision, editing, moving between drafts, and collecting and implementing feedback. Collaboration demands further scaffolding of communication and distributed activity, such as facilitating concurrent access to the developing corpus of work, effectively managing how work and knowledge about the work-in-progress are shared, and enabling efficient movement between drafts and revisions. In the field of software engineering, <i>version control systems (VCS) </i> are employed by developers to mitigate these issues by storing code in digital archives — referred to as repositories — which contain details about the history of the project, contributions, and other useful metrics (Bird et al. 2009; Carlsson 2013). Drawing on literature from [[the Performance and Culture course including Lavender, Bay-Cheng, Harvie, and Taylor; distributed creativity, and mining software repositories (MSR)]] this paper presents a vision towards use of VCS in the contexts of performance studies and distributed creativity research, and will leverage the VCS <i>git</i> as a research-creation tool in presenting a detailed account of this paper’s own ontogenesis. 
+        When working on a project, the ability to keep track of changes made by a creator over time, is essential to many facets of production, including revision, editing, moving between drafts, and collecting and implementing feedback. Collaboration demands further scaffolding of communication and distributed activity, such as facilitating concurrent access to the developing corpus of work, effectively managing how work and knowledge about the work-in-progress are shared, and enabling efficient movement between drafts and revisions. In the field of software engineering, <i>version control systems (VCS) </i> are employed by developers to mitigate these issues by storing code in digital archives — referred to as repositories — which contain details about the history of the project, contributions, and other useful metrics (Bird et al. 2009; Carlsson 2013). Drawing on literature from performance studies, distributed creativity, and mining software repositories (MSR), this paper presents a vision towards use of VCS in the contexts of performance studies and distributed creativity research, and will leverage the VCS <i>git</i> as a research-creation tool in presenting a detailed account of this paper’s own ontogenesis. 
       </p>
 
        <p>
 
-      VCS are tasked with maintaining current and past versions of work digital archives referred to as repositories. <i>Centralized version control (CVC)</i> systems, such as Subversion and Concurrent Versioning System [cite], repositories are contained within a single remote location, permitting developers temporary access to a portion of the codebase for modification. [cite] <i>Decentralized version control (DVC)</i>, by contrast, is an example of a distributed approach to VCS, and operates on a peer-to-peer model, enabling the entire repository to be stored locally on all machines affiliated with the project, (O’Sullivan 2009) as well as in the cloud. This facilitates temporally and geographically displaced contributions, offline work, and simultaneous document editing. (Kalliamvakou et al 2014)            
+      VCS are tasked with storing and transferring current and past versions of work in digital archives referred to as repositories. In <i>centralized version control (CVC)</i> systems, such as Subversion and Concurrent Versioning System [cite], repositories are contained within a single remote location, permitting developers temporary access to a portion of the codebase for modification. [cite] <i>Decentralized version control (DVC)</i>, by contrast, is an example of a distributed approach to VCS, and operates on a peer-to-peer model, enabling the entire repository to be stored locally on all machines affiliated with the project, (O’Sullivan 2009) as well as in the cloud. This facilitates temporally and geographically displaced contributions, offline work, and simultaneous document editing. (Kalliamvakou et al 2014)            
       </p>
 
        <p>
-       A popular DVC is git. The workflow used to write this paper with git can be distilled to four terminal commands: <i>git status</i>, <i>git pull</i>, <i>git add</i>, <i>git commit</i>, and <i>git push</i>, where:
+       A popular DVC is git, which is a program run in a computers command line interface, such as the terminal in Unix-based operating systems like Mac OS X and Linux. The workflow used to write this paper with git can be distilled to five terminal commands: <i>git status</i>, <i>git pull</i>, <i>git add</i>, <i>git commit</i>, and <i>git push</i>, where:
 
-      <p class="indented"><i>git status</i> reports the state of the local repository in comparison to the remote </p> 
-      
+            
       <p class="indented"><i>git add [filename]</i> tells git the name of a modified file to send to the remote as the newest version </p>
-
-       
 
        <p class="indented"><i>git commit</i> is the logging of the modification of work from the local repository to what is referred to as the staging area. A commit also contains a description of the change and reason(s) for its occurrence, written by the author of the change. An author can -- and typically does -- make multiple commits over the course of a work session</p>
 
@@ -54,8 +51,7 @@
 
        <p class="indented"> <i>git pull</i> is the retrieval of the most-recent version of the master repository from the cloud to a local repository on the author's machine </p>
 
-
-
+       <p class="indented"><i>git status</i> reports the state of the local repository in comparison to the most recent commit </p> 
       
       <p class="indented"><img src="DVC-model.jpg" alt="DVC-model" style="width:735px;height:233px;"></p>
       <p class="indented"><h4>Decentralized Version Control with git</h4> </p>
@@ -78,11 +74,16 @@
       
 
       <p>
-      As a corollary to this assertion of using git as both an archival and revision tool in research-creation practices that either do not engage in software development, or are hybrid, this paper as a work-in-progress is currently hosted at https://michaelpalumbo.github.io/paper/ , and is being composed along a rule that deems changes be committed frequently. As an example of two commits pertaining to the development of this very sentence, see <a href="https://github.com/michaelpalumbo/self-referent/commit/ed35d4f5016282efbc67a8cd7b6d81a0048a9217" target="_blank">this commit</a>, and then compare with <a href="https://github.com/michaelpalumbo/self-referent/commit/41cdeac813edd0403299e30d0ac16207422fb165" target="_blank">this commit</a>
+      As a corollary to this assertion of using git as both an archival and revision tool in research-creation practices that either do not engage in software development, or are hybrid, this paper as a work-in-progress is currently available at <a href="https://github.com/michaelpalumbo/self-referent" target="_blank">this repository</a>, and is being composed along a rule that deems changes be committed frequently. As an example of two commits pertaining to the development of this very sentence, see <a href="https://github.com/michaelpalumbo/self-referent/commit/ed35d4f5016282efbc67a8cd7b6d81a0048a9217" target="_blank">this commit</a>, and then compare with <a href="https://github.com/michaelpalumbo/self-referent/commit/41cdeac813edd0403299e30d0ac16207422fb165" target="_blank">this commit</a>
 
       </p>
       <p>
       This is significant in that the author has in past solo endeavours opted to work in long sprints of activity between documentation. What documentation does emerge from these processes is at most frequent made in haste following the end of a session. This coarse degree of resolution may hinder future effort to speculate on decisions made, and to imagine recourse for ongoing work. Further, it has been the experience of this author that such an opaque visibility of the decision-making in a creative work impedes its opening up to future collaboration. [cite the following:] that increased frequency of work contribution segmentations coincide with greater reflexivity in process, and aid in cognitive load. A habit developed early on in the process of writing this paper that saw commit messages as becoming a secondary locus for reflection about the content of the changed documents, writing in dialog with the ideas expressed in the commit, such as <a href="https://github.com/michaelpalumbo/self-referent/commit/56de6878cf14df906aeb4f40b3f6130dcf2d2d58" target="_blank">this commit</a>, which began as a note about missing some content from the course, and led to some musing on possible sources and ideas to fold into further discussion. 
+
+      Following action-oriented ontology (Leman 2008), and distributed creativity, (Glaveanu —date) the acts of committing one’s work to, and pulling select work from, a repository, are segmentations of overall continuous work into discrete representations. In addition to being paired with an author's comment about its purpose, a commit is also tagged with such metadata as time, IP address, file(s), and the differences between the versions of files when compared to the previous commit containing a given file.  
+
+      I bring this up because were we to think of commits as the segmentation of work contributions, the temporal unit of segmentation is as yet not formalized, and may depend on other aspects, such as the habits of the developer, as well as the conditions the developer's work environment [i.e. internet connectivity, others?] . In a lab context, like that of the Dispersion Lab, a proper zero state includes the repository being fully up to date before leaving; or a variance in lab members’ permissions in github use. In our case, we mostly opted to commit at the end of a given work session, but there were instances where commits occurred more frequently (when two or more researchers were co-developing) within a session, and also less frequently (in the earliest stages, I was the only one doing commits; then when others were taught how to do it, we each would sometimes forget to do it; and another occurrence was when there was a merge conflict, so the commit was abandoned until the next time I could resolve it). 
+
       </p>
 
 
