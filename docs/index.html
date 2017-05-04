@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html>
-<style>
-<style type="text/css">
-<!--
-.tab { margin-left: 40px; }
--->
-</style>
+<style> .indented { padding-left: 50pt; padding-right: 50pt; } </style> 
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <title>Using git to write a paper about doing research-creation using git</title>
@@ -47,24 +42,24 @@
        <p>
        A popular DVC is git. The workflow used to write this paper with git can be distilled to four terminal commands: <i>git status</i>, <i>git pull</i>, <i>git add</i>, <i>git commit</i>, and <i>git push</i>, where:
 
-      <p class="tab"><i>git status</i> reports the state of the local repository in comparison to the remote. </p>
+      <p class="indented"><i>git status</i> reports the state of the local repository in comparison to the remote </p> 
+      
+      <p class="indented"><i>git add [filename]</i> tells git the name of a modified file to send to the remote as the newest version </p>
+
        
 
-     
-       if git status reports any changes to local files, <i>git add [filename]</i> tells git the name of the file to send to the remote as the newest version. <i>git add .</i> is a shortcut to add all modified files. 
+       <p class="indented"><i>git commit</i> is the logging of the modification of work from the local repository to what is referred to as the staging area. A commit also contains a description of the change and reason(s) for its occurrence, written by the author of the change. An author can -- and typically does -- make multiple commits over the course of a work session</p>
 
-       <blockquote> 
-       pull is the retrieval of the most-recent version of the master repository from the cloud to a local repository on the developer’s machine </blockquote>
-       <blockquote> after an author makes a change to a file in a repository, git will report this  add occurs after an author has made some changes to a file(s) within the repository 
+       <p class="indented"><i>git push</i> uploads the commit(s) from the local repository to the remote </p> 
 
+       <p class="indented"> <i>git pull</i> is the retrieval of the most-recent version of the master repository from the cloud to a local repository on the author's machine </p>
 
 
-       , called a <i>pull request</i>; making some changes to a file or files within the repository, called a <i>modification</i>; the logging of the modification of work in the local repository, called a \emph{commit}, which contains a description of the change and reason(s) for its occurrence, written by the author of the change; and the uploading of files staged in commits, called a push. 
 
       
-      <img src="DVC-model.jpg" alt="DVC-model" style="width:735px;height:233px;">
-      <h2>Decentralized Version Control with git</h2>
-      </p>
+      <p class="indented"><img src="DVC-model.jpg" alt="DVC-model" style="width:735px;height:233px;"></p>
+      <p class="indented"><h4>Decentralized Version Control with git</h4> </p>
+      
 
       <p>
       Built on top of git is Github.com, the most prominent service offering a DVC platform. As of late 2016, Github.com is host to over 21 million publicly available repositories in the cloud. Such access to open data facilitates unprecedented knowledge sharing and mass collaboration, and affords researchers access to rich datasets, about which insights can be gained over the interdependence of creators and artefacts, how these entities interact over the lifecycle of a project, and the propagation of ideas. 
