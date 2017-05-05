@@ -47,28 +47,19 @@
 
 </p>
 <p>
-One area of research that has grown with the usage of VCS, including in such contexts as those mentioned above, is that of <i>mining software repositories (MSR)</i>. Repository mining is a practice used by software researchers to conduct both qualitative and quantitative analyses on repositories. Burlet and Hindle (2015) mined repositories belonging specifically to computer musicians who use visual programming language Max/MSP , finding that "...in comparison to the general population of software developers, computer musicians' repositories have less commits, less frequent commits, more commits on weekends, yet similar numbers of bug reports and similar numbers of contributing authors." (Burlet and Hindle 292) Using an analysis method called clone detection, Burlet and Hindle (2015) found that "...the vast majority of code [within these repositories] can be reconstructed from duplicate fragments," (Burlet and Hindle 293) indicating that computer musicians as designers of their own instruments frequently replicate sections of their code. This would be consistent with the design of any instrument that contains more than one of the same component, such as an 88-key piano. 
+Another area of research that has grown with the usage of VCS, including in such contexts as those mentioned above, is that of <i>mining software repositories (MSR)</i>. MSR is a practice used by software researchers to conduct both qualitative and quantitative analyses on repositories. Burlet and Hindle (2015) mined repositories belonging specifically to computer musicians who use visual programming language Max/MSP , finding that "...in comparison to the general population of software developers, computer musicians' repositories have less commits, less frequent commits, more commits on weekends, yet similar numbers of bug reports and similar numbers of contributing authors." (Burlet and Hindle 292) By focusing on the code contained within a repository, researchers can infer about how ideas develop and propagate. Using an analysis method called clone detection, Burlet and Hindle (2015) found that "...the vast majority of code [within these repositories] can be reconstructed from duplicate fragments," (Burlet and Hindle 293) indicating that computer musicians as designers of their own instruments frequently replicate sections of their code. This would be consistent with the design of any instrument that contains more than one -- or variations -- of the same component, such as the keys of a piano. 
 </p>
 <p>
-Concerned also with the study of populations of users who participate in the use of VCS, MSR can provide researchers with insights such as the co-evolution of a project's artefacts and its contributor base, and how workflows emerge and adapt to project goals. Vasilescu, Serebrenik, and Filkov (2015) used MSR to produce a "...large data set of social diversity attributes of programmers in GITHUB [sic] teams... [culled from] 23,493 GITHUB projects." (Vasilescu et al 1) Bird, Pattison, D'Souza, Filkov, and Devanbu (2008) analyzed archived communications within mailing lists of three open source software projects, detailing "...emergent social structure and its relationship to technical activities." (Bird et al. 2008)  
+Concerned also with the study of populations of users who participate in the use of VCS, MSR can provide researchers with insights such as the co-evolution of a project's artefacts and its contributor base, and how these systems augment collective work processes and how workflows emerge and adapt to project goals. Vasilescu, Serebrenik, and Filkov (2015) used MSR to produce a "...large data set of social diversity attributes of programmers in GITHUB [sic] teams... [culled from] 23,493 GITHUB projects." (Vasilescu et al 1) Bird, Pattison, D'Souza, Filkov, and Devanbu (2008) analyzed archived communications within mailing lists of three open source software projects, detailing "...emergent social structure and its relationship to technical activities." (Bird et al. 2008)  
 </p>
 
-<p>
-Analysis of a repository is useful because it affords researchers a view on the co-evolution of a project and its contributors, how workflows emerge and adapt to project goals, environmental conditions, and changes in personnel. See also this[ the empirical study on commits from computer music community may be interesting in this section!Software repository mining is an area of research devoted to gathering information about 
-
-[[Expand a little more about VCS and introduce MSR here]]: Interest in the deployment of such systems in research and educational contexts is gaining momentum. have increased, so to has interest in studying the populations of developers using these systems, the ways in which the code itself develops and propagates through complex networks, and how these systems augment collective work processes [reword]. 
-
-
-        
-      </p>
-
-       <p>
-
+<h4>Two Version Control Systems Topologies: Centralized and Decentralized</h4>
+      <p>
       VCS are tasked with storing and transferring current and past versions of work in digital archives referred to as repositories. In <i>centralized version control (CVC)</i> systems, such as Subversion and Concurrent Versioning System [cite], repositories are contained within a single remote location, permitting developers temporary access to a portion of the codebase for modification. [cite] <i>Decentralized version control (DVC)</i>, by contrast, is an example of a distributed approach to VCS, and operates on a peer-to-peer model, enabling the entire repository to be stored locally on all machines affiliated with the project, (O’Sullivan 2009) as well as in the cloud. This facilitates temporally and geographically displaced contributions, offline work, and simultaneous document editing. (Kalliamvakou et al 2014)            
       </p>
 
        <p>
-       A popular DVC is git, which is a program run in a computers command line interface, such as the terminal in Unix-based operating systems like Mac OS X and Linux. The workflow used to write this paper with git can be distilled to five terminal commands: <i>git status</i>, <i>git pull</i>, <i>git add</i>, <i>git commit</i>, and <i>git push</i>, where:
+       A popular DVC is git, which is run within a computer's command line interface, such as the terminal in Unix-based operating systems like Mac OS X and Linux. The workflow used to write this paper with git can be distilled to five terminal commands: <i>git status</i>, <i>git pull</i>, <i>git add</i>, <i>git commit</i>, and <i>git push</i>, where:
 
             
       <p class="indented"><i>git add [filename]</i> tells git the name of a modified file to send to the remote as the newest version </p>
@@ -79,7 +70,7 @@ Analysis of a repository is useful because it affords researchers a view on the 
 
        <p class="indented"> <i>git pull</i> is the retrieval of the most-recent version of the master repository from the cloud to a local repository on the author's machine </p>
 
-       <p class="indented"><i>git status</i> reports the state of the local repository in comparison to the most recent commit </p> 
+       <p class="indented"><i>git status</i> reports the state of the local repository in comparison to the most recent commit</p> 
       
       <p class="indented"><img src="DVC-model.jpg" alt="DVC-model" style="width:735px;height:233px;"></p>
       <p class="indented"><h4>Decentralized Version Control with git</h4> </p>
@@ -90,18 +81,33 @@ Analysis of a repository is useful because it affords researchers a view on the 
       </p>
 
       <p>
-       Of interest to those who are unfamiliar with working with code is the curious fact that git's archiving system is not limited solely to the indexing of code. Rather, most file extensions may be archived and tracked, including those used often in writing and research, such as .docx, .xls, and .txt. 
+       Of interest to those who are unfamiliar with working with code is the fact that git's archiving system is not limited solely to the indexing of code. Rather, most file extensions may be archived and tracked, including those used often in writing and research, such as .docx, .xls, and .txt. 
+       </p>
+       <p>
+       As a social network based on collective production in an open and accessible corpus of works -- and works-in-progress -- Github facilitates unprecedented knowledge-sharing and mass collaboration, and affords researchers access to rich datasets, about which insights can be gained over the interdependence of creators and artefacts, how these entities interact over the lifecycle of a project, and the propagation of ideas. The ability to freely contribute to research, creation, and research-creation repositories and concurrently analyze their content and social structure both quantitatively -- i.e. usage metrics, pattern recognition on the contents of the docs, etc -- and qualitatively -- i.e. ethnographic study of the commit messages, grounded theory analysis of issue or bug messages, etc -- is perhaps of particular interest to performance studies. 
 
-       As a social network based on collective production in an open and accessible corpus of works -- and works-in-progress -- Github facilitates unprecedented knowledge sharing and mass collaboration, and affords researchers access to rich datasets, about which insights can be gained over the interdependence of creators and artefacts, how these entities interact over the lifecycle of a project, and the propagation of ideas. The ability to freely contribute to research, creation, and research-creation repositories and concurrently analyze their content and social structure both quantitatively -- i.e. usage metrics, pattern recognition on the contents of the docs, etc -- and qualitatively -- i.e. ethnographic study of the commit messages, grounded theory analysis of issue or bug messages, etc -- is perhaps of particular interest to performance studies. 
-
-     
-
-
-
-
+       <p>
+      This is significant in that the author has in past solo endeavours opted to work in long sprints of activity between documentation. What documentation does emerge from these processes is at most frequent made in haste following the end of a session. This coarse degree of resolution has, at times, hindered future efforts to speculate on decisions made, and to imagine recourse for ongoing work. Further, it has been the experience of this author that such an opaque visibility of the decision-making in a creative work impedes its opening up to future collaboration. [cite the following:] that increased frequency of work contribution segmentations coincide with greater reflexivity in process, and aid in cognitive load.
       </p>
 
-      
+      <h4>Mining the Repository of This Paper</h4>
+
+      <h4>The Commit as a Segmentation of Continuous Work</h4>
+
+      <p>Following action-oriented ontology (Leman 2008), and distributed creativity, (Glaveanu —date) the acts of committing one’s work to, and pulling select work from, a repository, may be taken as segmentations of overall continuous work into discrete representations. In addition to being paired with an author's comment about its purpose, a commit is also tagged with such metadata as time, IP address, file(s), and the differences between the versions of files when compared to the previous commit containing a given file. 
+
+      I bring this up because were we to think of commits as the segmentation of work contributions, the temporal unit of segmentation is as yet not formalized, and may depend on other aspects, such as the habits of the developer, as well as the conditions the developer's work environment [i.e. internet connectivity, others?] . In a lab context, like that of the Dispersion Lab, a proper zero state includes the repository being fully up to date before leaving; or a variance in lab members’ permissions in github use. In our case, we mostly opted to commit at the end of a given work session, but there were instances where commits occurred more frequently (when two or more researchers were co-developing) within a session, and also less frequently (in the earliest stages, I was the only one doing commits; then when others were taught how to do it, we each would sometimes forget to do it; and another occurrence was when there was a merge conflict, so the commit was abandoned until the next time I could resolve it). 
+
+
+      <p>
+      A habit developed early on in the process of writing this paper, that saw commit messages as becoming a secondary locus for reflection about the content of the changed documents, writing in dialog with the ideas expressed in the commit, such as <a href="https://github.com/michaelpalumbo/self-referent/commit/56de6878cf14df906aeb4f40b3f6130dcf2d2d58" target="_blank">this commit</a>, which began as a note about missing some content from the course, and led to some musing on possible sources and ideas to fold into further discussion. 
+      </p>
+
+
+
+       <p>
+      This development is comparable to the concept of the mental model <i>rubber duck debugging</i>, where one describes an idea to a rubber duck, or some other "... inanimate [object] ... forcing the explainer to clarify and structure the explanation" (Phillips et al 2013) as a means of thinking reflexively about an idea. [[to follow this would be the study on commit messages, which I think is about best practices -- but that the act of a commit is to make known to future readers (including oneself) one's act of making change(s) to a document.  ]]
+      </p>
 
       <p>
       As a corollary to this assertion of using git as for archiving, revision, and analysis in research-creation practices beyond software development, the source material, drafts, and revision history of this paper as a work-in-progress is currently available in its <a href="https://github.com/michaelpalumbo/self-referent" target="_blank">public repository </a>, and is being composed along a rule that deems changes be committed frequently. As an example of two commits pertaining to the <i>development of this very sentence</i>: 
@@ -122,18 +128,9 @@ Analysis of a repository is useful because it affords researchers a view on the 
     <p class="indented">Date:   Sun Apr 30 15:22:09 2017 -0400</p>
     <p class="indented">add the url to the github.io page and also added two commits that have relation to one another in that a papragraph in the paper references them as an example of two snapshots of archiving the development of itself.</p>
 
-      <p>
-      This is significant in that the author has in past solo endeavours opted to work in long sprints of activity between documentation. What documentation does emerge from these processes is at most frequent made in haste following the end of a session. This coarse degree of resolution may hinder future effort to speculate on decisions made, and to imagine recourse for ongoing work. Further, it has been the experience of this author that such an opaque visibility of the decision-making in a creative work impedes its opening up to future collaboration. [cite the following:] that increased frequency of work contribution segmentations coincide with greater reflexivity in process, and aid in cognitive load. A habit developed early on in the process of writing this paper that saw commit messages as becoming a secondary locus for reflection about the content of the changed documents, writing in dialog with the ideas expressed in the commit, such as <a href="https://github.com/michaelpalumbo/self-referent/commit/56de6878cf14df906aeb4f40b3f6130dcf2d2d58" target="_blank">this commit</a>, which began as a note about missing some content from the course, and led to some musing on possible sources and ideas to fold into further discussion. 
+      
 
-      Following action-oriented ontology (Leman 2008), and distributed creativity, (Glaveanu —date) the acts of committing one’s work to, and pulling select work from, a repository, are segmentations of overall continuous work into discrete representations. In addition to being paired with an author's comment about its purpose, a commit is also tagged with such metadata as time, IP address, file(s), and the differences between the versions of files when compared to the previous commit containing a given file.  
-
-      I bring this up because were we to think of commits as the segmentation of work contributions, the temporal unit of segmentation is as yet not formalized, and may depend on other aspects, such as the habits of the developer, as well as the conditions the developer's work environment [i.e. internet connectivity, others?] . In a lab context, like that of the Dispersion Lab, a proper zero state includes the repository being fully up to date before leaving; or a variance in lab members’ permissions in github use. In our case, we mostly opted to commit at the end of a given work session, but there were instances where commits occurred more frequently (when two or more researchers were co-developing) within a session, and also less frequently (in the earliest stages, I was the only one doing commits; then when others were taught how to do it, we each would sometimes forget to do it; and another occurrence was when there was a merge conflict, so the commit was abandoned until the next time I could resolve it). 
-
-      </p>
-
-
-      <p>
-      In mental modelling, this is comparable to the concept of <i>rubber duck debugging</i>, where one describes an idea to a rubber duck, or some other "... inanimate [object] ... forcing the explainer to clarify and structure the explanation" (Phillips et al 2013) to themselves as a means of thinking reflexively about the idea. [[to follow this would be the study on commit messages, which I think is about best practices -- but that the act of a commit is to make known to future readers (including oneself) one's act of making change(s) to a document.  ]]
+      
       </p>
 
       <p>
@@ -149,7 +146,7 @@ Analysis of a repository is useful because it affords researchers a view on the 
  
       over time paper as a work-in-progress over time and through coone method of making sense of data in a repository is to visualize the history of the commits.      One method of making sense of 
 
-see in particular: 
+<!--see in particular: 
 
 statistical analysis from project metadata. this is in section 3. 
 
@@ -162,7 +159,7 @@ see [25-27] for clone detection algorithms.
 
 see gold et al 38]
 
-Burlet and Hindle conducted a study on the use of [reword: software development practices of computer musicians when programming in] programming languages such as Max/MSP and Puredata. They highlight a need for further research into “how computer musicians program, share, and collaborate on patches developed in … languages [like] … Max/MSP. … [And] if computer musicians use software engineering tools such as source control repositories or bug trackers and where they seek help with programming syntax and semantics.” (1)
+-->
 
 
 </p>
