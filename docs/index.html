@@ -36,14 +36,14 @@
       </p> -->
 <h3>Abstract</h3>
       <p>
-        When working on a project, the ability to keep track of changes made by a creator over time is essential to many facets of production. This includes revision, editing, moving between drafts, and collecting and implementing feedback. Collaboration between individuals, whether locally or spatio-temporally distributed, requires greater scaffolding of communication and transmission of artefacts, such as facilitating concurrent access to the developing corpus of work, effectively managing how work and knowledge about the work-in-progress are shared, and enabling efficient movement between drafts and revisions. In the field of software engineering, <i>version control systems (VCS) </i> are employed by developers to mitigate these issues by storing code in digital archives called repositories — which contain details about the history of the project, contributions, and other useful metrics (Bird et al. 2009; Carlsson 2013). VCS are not limited to the archiving and transmission of code. In the spirit of Diana Taylor's advocation for the convergence of Perfomance Studies and Latin American Studies scholarship towards "...a real engagement between two fields that helps us rethink both" (Taylor XVIII), this paper examines the potential that VCS may offer to research-creation in the context of theatre and performance studies, by leveraging the use of the VCS <i>git</i> to document and analyze its -- the paper's -- own socio-technical ontogenesis, or its "...coming into being." (Boesch 182) 
+        The ability to keep track of changes made by a creator over the course of a project's timeline is beneficial to many facets of production. This includes revision, editing, moving between drafts, and collecting and implementing feedback. Collaboration between individuals, whether locally or spatio-temporally distributed, requires greater scaffolding of communication and transmission of artefacts, such as facilitating concurrent access to the developing corpus of work, effectively managing how work and knowledge about the work-in-progress are shared, and enabling efficient movement between drafts and revisions. In the field of software engineering, <i>version control systems (VCS) </i> are employed by developers to mitigate these issues by storing code in digital archives called repositories — which contain details about the history of the project, contributions, and other useful metrics (Bird et al. 2009; Carlsson 2013). VCS are not limited to the archiving and transmission of code. In the spirit of the important contribution of Diana Taylor's advocation for a convergence of Perfomance Studies and Latin American Studies scholarship towards "...a real engagement between two fields that helps us rethink both" (Taylor XVIII), this paper examines the potential that VCS may offer to research-creation in the context of theatre and performance studies. With this in mind by leveraging the use of the VCS <i>git</i> to document and analyze its -- the paper's -- own socio-technical ontogenesis, or its "...coming into being." (Boesch 182) 
 
         <!--This paper presents a vision towards Drawing on literature from performance studies, distributed creativity, and mining software repositories (MSR), this paper presents a vision towards use of VCS in the contexts of performance studies and distributed creativity research, and will leverage the VCS <i>git</i> as a research-creation tool in presenting a detailed account of this paper’s own ontogenesis. -->
 </p>
 <p></p>
 
 <h4>Background</h4>
-<p> Interest in the deployment of VCS in disparate contexts is gaining momentum. The field of computer-supported collaborative learning (CSCL) has taken up interest in studying the effects of integrating VCS in the classroom. For example, Francese, Gravino, Risi, Scanniello, and Tortora (2015) present on the experiences of students using VCS in a course on developing software for mobile platforms, and assert the importance of leveraging project-based learning in the classroom. (Francese et al 1) Zagalsky, Feliciano, Storey, Zhao, and Wang (2015) focus on the educational potential of the social networking features within the cloud-based VCS <i>Github</i>, towards supporting collaborative learning and group work. (Zagalsky et al 1)
+<p> Interest in the deployment of VCS in disparate contexts is gaining momentum. Those engaged in the field of computer-supported collaborative learning (CSCL) has taken up interest in studying the effects of integrating VCS in the classroom. For example, Francese, Gravino, Risi, Scanniello, and Tortora (2015) present on the experiences of students using VCS in a course on developing software for mobile platforms, and assert the importance of leveraging project-based learning in the classroom. (Francese et al 1) Zagalsky, Feliciano, Storey, Zhao, and Wang (2015) focus on the educational potential of the social networking features within the cloud-based VCS <i>Github</i>, towards supporting collaborative learning and group work. (Zagalsky et al 1)
 </p>
 
 <p>Research into the implications of VCS in collaborative research and production are also on the rise, and can be found in such fields as computer-supported collaborative work (CSCW), and [...]. Kalliamvakou, Damian, Singer, and German (2014) show how using Github in team-based software development contributes to emergent organized activity, and positively affects the collaboration as defined by "...coordination, communication, awareness, task division, and conflict resolution." (Kalliamvakou et al 1) Crowston and Howison (2005) contucted a study on patterns of communication in open source software projects hosted in the online community SourceForge to demonstrate that as projects grow in size, their social networks become progressivley more decentralized, while project components fracture into increasing modularity. (Crowston and Howison 1)
@@ -57,13 +57,17 @@ Concerned also with the study of populations of users who participate in the use
 </p>
 
 <p>
-Through the use of a public repository, creators open their work to early review and propagation [cite]. In FLOSS culture (cite) [[draw comparison with Harvie's 'craftmanship' (Harvie 109) where "I consider craftmanship in contemporary art and performance practices to explore how it might help value art, labour and quality not for their financial profit, but rather for their own sakes, and, in so doing, how it might offer a model of production marked not by individual self-interest but by social interdependence and egalitarianism." A mode of atlruism can be observed in the behaviour of software developers towards helping each other solve problems, as evidenced in the online community StackOverflow.com, which provides forums for programmers to ask and provide help in programming related issues.]]
+Through the use of a public repository, creators open their work to early review and multidirectional propagations of ideas [cite]. A distributed creativity view of cultural production would take that </p>
+
+<p class="blockquote2"> “Creative action does not end with producing a certain outcome but requires, as an integral part, the social validation of the result, its appreciation by other people, primarily experts or gatekeepers (constituting the field) within art, science, technology, etc. (Constituting the domain). In this sense the production of what is creative is distributed both between people and across time.” (Glaveanu 25) </p>
+
+<p> Consistent with Free/Libre Open Source Software (FLOSS) culture, which embraces a communalism toward software development, (Crowston et al 7:2) is also the "...has been described as community-based development" (cite) [[draw comparison with Harvie's 'craftmanship' (Harvie 109) where "I consider craftmanship in contemporary art and performance practices to explore how it might help value art, labour and quality not for their financial profit, but rather for their own sakes, and, in so doing, how it might offer a model of production marked not by individual self-interest but by social interdependence and egalitarianism." Motivated away from a proprietary and sense of ownership -- A mode of communalism that [[atlruism need to find a better word than painting the entire coding community in one light, without knowing their intentions]] can be observed in the behaviour of software developers towards helping each other solve problems, as evidenced in the online community StackOverflow.com, which provides forums for programmers to ask and provide help in programming related issues.]] 
 </p>
 <p></p>
 
 <h4>Two Version Control Systems Topologies: Centralized and Decentralized</h4>
       <p>
-      VCS are tasked with storing and transferring current and past versions of work in digital archives referred to as repositories. In <i>centralized version control (CVC)</i> systems, such as Subversion and Concurrent Versioning System [cite], repositories are contained within a single remote location, permitting developers temporary access to a portion of the codebase for modification. [cite] <i>Decentralized version control (DVC)</i>, by contrast, is an example of a distributed approach to VCS, and operates on a peer-to-peer model, enabling the entire repository to be stored locally on all machines affiliated with the project, (O’Sullivan 2009) as well as in the cloud. This facilitates temporally and geographically displaced contributions, offline work, and simultaneous document editing. (Kalliamvakou et al 2014)            
+      VCS are tasked with storing and transferring current and past versions of work in digital archives referred to as repositories. In contemporary VCS, repositories are hosted in the cloud. In <i>centralized version control (CVC)</i> systems, such as Subversion and Concurrent Versioning System [cite], repositories are contained within a single remote location, permitting developers temporary access to a portion of the codebase for modification. [cite] <i>Decentralized version control (DVC)</i>, by contrast, is an example of a distributed approach to VCS, and operates on a peer-to-peer model, enabling the entire repository to be stored locally on all machines affiliated with the project. (O’Sullivan 2009)  This facilitates temporally and geographically displaced contributions, offline work, and simultaneous document editing. (Kalliamvakou et al 2014)            
       </p>
 
        <p>
@@ -89,7 +93,7 @@ Through the use of a public repository, creators open their work to early review
       </p>
 
       <p>
-       Of interest to those who are unfamiliar with working with code is the fact that git's archiving system is not limited solely to the indexing of code. Rather, most file extensions may be archived and tracked, including those used often in writing and research, such as .docx, .xls, and .txt. 
+       Of interest to those who are unfamiliar with working with code is the fact that as git's archiving system is designed to perform best with text-based data, this does not preclude its use beyond the indexing of code. Rather, all forms of digital data may be archived and tracked, including those used often in writing, research, and the arts, such as .docx, .xls, .txt, .jpeg, .mp3, etc. 
        </p>
        <p>
        As a social network based on collective production in an open and accessible corpus of works -- and works-in-progress -- Github facilitates unprecedented knowledge-sharing and mass collaboration, and affords researchers access to rich datasets, about which insights can be gained over the interdependence of creators and artefacts, how these entities interact over the lifecycle of a project, and the propagation of ideas. The ability to freely contribute to research, creation, and research-creation repositories and concurrently analyze their content and social structure both quantitatively -- i.e. usage metrics, pattern recognition on the contents of the docs, etc -- and qualitatively -- i.e. ethnographic study of the commit messages, grounded theory analysis of issue or bug messages, etc -- is perhaps of particular interest to performance studies. 
@@ -109,7 +113,7 @@ Plan:
 
       <p>Following action-oriented ontology (Leman 2008), and distributed creativity, (Glaveanu —date) the acts of committing one’s work to, and pulling select work from, a repository, may be taken as segmentations of overall continuous work into discrete representations.</p> 
 
-      <p class="indented">"It is precisely distribution in time that resolves the tension between stability and change. Only when we operate with a static, a-temporal perspective are we able to isolate single segments within the uninterrupted flow of action and development, and evaluate them as either continuous with what came before or marking a rupture or discontinuity. In reality, ruptures are continuous with the past and continuity is achieved through change and transformation. This conclusion emerges, however, only when we add time to our view of creative action and, more than this, when we are able to operate developmentally, with multiple time frames.” (Glaveanu 72) </p>
+      <p class="blockquote2">"It is precisely distribution in time that resolves the tension between stability and change. Only when we operate with a static, a-temporal perspective are we able to isolate single segments within the uninterrupted flow of action and development, and evaluate them as either continuous with what came before or marking a rupture or discontinuity. In reality, ruptures are continuous with the past and continuity is achieved through change and transformation. This conclusion emerges, however, only when we add time to our view of creative action and, more than this, when we are able to operate developmentally, with multiple time frames.” (Glaveanu 72) </p>
 
       <p> can then connect the gesture of making a commit to an embodied practice (Taylor 3)
 
@@ -123,7 +127,7 @@ Plan:
       </p>
 
 <p></p>
-      <h4>Mining the Repository of This Paper</h4>
+      <h2>Mining the Repository of This Paper</h2>
 
       <p>
       
@@ -139,15 +143,18 @@ Plan:
       This development is comparable to the concept of the mental model <i>rubber duck debugging</i>, where one describes an idea to a rubber duck, or some other "... inanimate [object] ... forcing the explainer to clarify and structure the explanation" (Phillips et al 2013) as a means of thinking reflexively about an idea. [[to follow this would be the study on commit messages, which I think is about best practices -- but that the act of a commit is to make known to future readers (including oneself) one's act of making change(s) to a document.  ]]
       </p>
 
-<p> In comparing commits across the timeline, there appears a tendency in the early commits to perform an intelligence, to suggest that "I know what I'm talking about" to potential future readers of the commit history. For example:
+<h4>Co-evolution of Artist and Artefacts</h4>
+<p> Distributed creativity holds the position that Glaveanu points to the condition of human creators in "Humans do not simply adapt to systems. They [also] shape them. How do we recognize elements such as choice, timing, and self-presentation except through the ways in which individuals and groups perform them?" (Taylor 7)
+
+<p> In comparing commits across the timeline, there appears a tendency in the early commits to perform an intelligence about the subject at hand at such an early stage in the development of the project, to suggest that "I know what I'm talking about" to potential future readers of the commit history. For example:
 </p>
 <p>
-  commit 56de6878cf14df906aeb4f40b3f6130dcf2d2d58
+  commit 56de6878cf
 </p>
 <p>
 Taylor asserts that for some "...the constructedness of performance signals its artificiality -- it is 'put on,' antithetical to the 'real' and 'true.'" (Taylor 4) In further support of this might by Lavender on how the difference between gen x and gen y is that gen y knows they're being watched, which is a product of sousveillance and social networks.  Upon reflection of some of the commit</p>
 
-<P> Another to note is that at earlier stages the diversity of files used and number of files created was greater than in the end, when development and composition of the paper generally only existed within the index.html file and then looking at its rendering in the browser. </P>
+<P> Another to note is that at earlier stages the diversity of files used and number of files created was greater than in the end, when development and composition of the paper generally only existed within the index.html file and then looking at its rendering in the browser. </P>1
 
       <p>
       As a corollary to this assertion of using git as for archiving, revision, and analysis in research-creation practices beyond software development, the source material, drafts, and revision history of this paper as a work-in-progress is currently available in its <a href="https://github.com/michaelpalumbo/self-referent" target="_blank">public repository </a>, and is being composed along a rule that deems changes be committed frequently. As an example of two commits pertaining to the <i>development of this very sentence</i>: 
@@ -160,9 +167,8 @@ Taylor asserts that for some "...the constructedness of performance signals its 
       <p class="indented"><i>added sentence referred to in the paragraph about using git for the writing of this very paper. also added a folder about formatting, thinking that I may submit the paper to the PUBLIC journal CFP June 1, 2017. http://www.publicjournal.ca/submissions/most-recent-call/</i>
       </p>
 
-    followed by 
-
-    <p class="indented"> <a href="https://github.com/michaelpalumbo/self-referent/commit/41cdeac813edd0403299e30d0ac16207422fb165" target="_blank">commit 41cdeac813edd0403299e30d0ac16207422fb165</a></p>
+    followed by 2
+    <p class="indented"> <a href="https://github.com/michaelpalumbo/self-referent/commit/41cdeac813edd0403299e30d0ac16207422fb165" target="_blank">commit 41cdeac813</a></p>
 
     <p class="indented">Author: michaelpalumbo emailmichaelpalumbo@gmail.com</p>
     <p class="indented">Date:   Sun Apr 30 15:22:09 2017 -0400</p>
@@ -174,7 +180,7 @@ Taylor asserts that for some "...the constructedness of performance signals its 
     <p></p>
     <p></p>
     <p> future: could mine contributor commit messages to look for senses of humor in the developers. i.e. one of my commits: 
-    <p class="indented">commit de2950bbe290f1c01e4d8dbe2f8ce0ec55e1d8a4 </p>
+    <p class="indented">commit de2950bbe2 </p>
     <p class="indented">Author: michaelpalumbo emailmichaelpalumbo@gmail.com</p>
     <p class="indented">Date:   Thu May 4 22:15:44 2017 -0400</p>
 
