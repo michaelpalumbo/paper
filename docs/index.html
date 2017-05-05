@@ -63,84 +63,90 @@ Concerned also with the study of populations of users who participate in the use
 <p></p>
 
 <h4>Two Version Control System Topologies: Centralized and Decentralized</h4>
-      <p>
-      VCS are tasked with storing and transferring current and past versions of work in digital archives referred to as repositories. In contemporary VCS, repositories are hosted in the cloud. In <i>centralized version control (CVC)</i> systems, such as Subversion and Concurrent Versioning System [cite], repositories are contained within a single remote location, permitting developers temporary access to a portion of the codebase for modification. [cite] <i>Decentralized version control (DVC)</i>, by contrast, is an example of a distributed approach to VCS, and operates on a peer-to-peer model, enabling the entire repository to be stored locally on all machines affiliated with the project. (O’Sullivan 2009)  This facilitates temporally and geographically displaced contributions, offline work, and simultaneous document editing. (Kalliamvakou et al 2014)            
-      </p>
+<p></p>
 
-       <p>
-       A popular DVC is git, which is run within a computer's command line interface, such as the terminal in Unix-based operating systems like Mac OS X and Linux. The workflow used to write this paper with git can be distilled to five terminal commands: <i>git status</i>, <i>git pull</i>, <i>git add</i>, <i>git commit</i>, and <i>git push</i>, where:
+<p>
+VCS are tasked with storing and transferring current and past versions of work in digital archives referred to as repositories. In contemporary VCS, repositories are hosted in the cloud. In <i>centralized version control (CVC)</i> systems, such as Subversion and Concurrent Versioning System [cite], repositories are contained within a single remote location, permitting developers temporary access to a portion of the codebase for modification. [cite] <i>Decentralized version control (DVC)</i>, by contrast, is an example of a distributed approach to VCS, and operates on a peer-to-peer model, enabling the entire repository to be stored locally on all machines affiliated with the project. (O’Sullivan 2009)  This facilitates temporally and geographically displaced contributions, offline work, and simultaneous document editing. (Kalliamvakou et al 2014)            
+</p>
+
+<p>
+A popular DVC is git, which is run within a computer's command line interface, such as the terminal in Unix-based operating systems like Mac OS X and Linux. The workflow used to write this paper with git can be distilled to five terminal commands: <i>git status</i>, <i>git pull</i>, <i>git add</i>, <i>git commit</i>, and <i>git push</i>, where:
 
        
-       <p class="indented"><i>git status</i> reports the state of the local repository in comparison to the most recent commit</p> 
+      <p class="indented"><i>git status</i> reports the state of the local repository in comparison to the most recent commit</p> 
 
       <p class="indented"><i>git add [filename]</i> tells git to track a file with the specified filename. An alternate command -- and one used quite frequently throughout the composition of this paper was <i>git add .</i>, which tells git to track all recently modified, added, or deleted files </p>
 
-       <p class="indented"><i>git commit</i> is the logging of the modification of work from the local repository to what is referred to as the staging area. A commit also contains a description of the change and reason(s) for its occurrence, written by the author of the change. An author can -- and typically does -- make multiple commits over the course of a work session</p>
+      <p class="indented"><i>git commit</i> is the logging of the modification of work from the local repository to what is referred to as the staging area. A commit also contains a description of the change and reason(s) for its occurrence, written by the author of the change. An author can -- and typically does -- make multiple commits over the course of a work session</p>
 
-       <p class="indented"><i>git push</i> uploads the commit(s) from the local repository to the remote </p> 
+      <p class="indented"><i>git push</i> uploads the commit(s) from the local repository to the remote </p> 
 
-       <p class="indented"> <i>git pull</i> is the retrieval of the most-recent version of the master repository from the cloud to a local repository on the author's machine </p>
+      <p class="indented"> <i>git pull</i> is the retrieval of the most-recent version of the master repository from the cloud to a local repository on the author's machine </p>
 
        
       
       <p class="indented"><img src="DVC-model.jpg" alt="DVC-model" style="width:735px;height:233px;"></p>
-      <h4 style="padding-left: 50pt">Figure 1: Decentralized Version Control with git</h4> </p>
+      <h4 style="padding-left: 50pt">Figure 1: Decentralized Version Control with git</h4> 
+      </p>
       
 
-      <p>
-      Built on top of git is Github.com, the most prominent service offering a DVC platform. As of late 2016, Github.com is host to over 21 million publicly available repositories in the cloud. Github was chosen as the DVC for this project because its wide adoption by other scholars, developers, and educators, indicating its potential as a social network. (Jacobson and Sandler 2008; Aragon and Williams 2011; Kalliamvakou et al. 2014; Bird et al. 2008) 
-      </p>
-
-      <p>
-       Of interest to those who are unfamiliar with working with code is the fact that as git's archiving system is designed to perform best with text-based data, this does not preclude its use beyond the indexing of code. Rather, all forms of digital data may be archived and tracked, including those used often in writing, research, and the arts, such as .docx, .xls, .txt, .jpeg, .mp3, etc. 
-       </p>
-       <p>
-       As a social network based on collective production in an open and accessible corpus of works -- and works-in-progress -- Github facilitates unprecedented knowledge-sharing and mass collaboration, and affords researchers access to rich datasets, about which insights can be gained over the interdependence of creators and artefacts, how these entities interact over the lifecycle of a project, and the propagation of ideas. The ability to freely contribute to research, creation, and research-creation repositories and concurrently analyze their content and social structure both quantitatively -- i.e. usage metrics, pattern recognition on the contents of the docs, etc -- and qualitatively -- i.e. ethnographic study of the commit messages, grounded theory analysis of issue or bug messages, etc -- is perhaps of particular interest to performance studies. 
-
-       <p>
-      This is significant in that the author has in past solo endeavours opted to work in long sprints of activity between documentation. What documentation does emerge from these processes is at most frequent made in haste following the end of a session. This coarse degree of resolution has, at times, hindered future efforts to speculate on decisions made, and to imagine recourse for ongoing work. Further, it has been the experience of this author that such an opaque visibility of the decision-making in a creative work impedes its opening up to future collaboration. [cite the following:] that increased frequency of work contribution segmentations coincide with greater reflexivity in process, and aid in cognitive load.
-      </p>
+<p>
+Built on top of git is Github.com, the most prominent service offering a DVC platform. As of late 2016, Github.com is host to over 21 million publicly available repositories in the cloud. Github was chosen as the DVC for this project because its wide adoption by other scholars, developers, and educators, indicating its potential as a social network. (Jacobson and Sandler 2008; Aragon and Williams 2011; Kalliamvakou et al. 2014; Bird et al. 2008) 
+</p>
 
 <p>
-Through the use of a public repository, creators open their work to early review and evaluation by others in contexts that may differ from their own. In git, a user can copy a repository belonging to another through an action called <i>forking</i>. Forking facilitates two essential workflows in the social network of git: one can alter the copied repository and propose these modifications to the intial project owner; or they can use this copy as either the starting point -- or introducing it in tandem with -- their own project, thereby embracing a project-based learning approach. Forking a repository generates a connection between one user and another, thereby expanding or strengthening community structure. (Bird et al. 2) Following a distributed creativity view of cultural production, </p>
+Git's archiving system is designed to perform best with text-based data, which does does not preclude its use beyond the indexing of code, making it of potential interest to those who do not posess programming skills. All forms of digital data may be archived and tracked, including those used often in writing, research, and the arts, such as .docx, .xls, .txt, .jpeg, .mp3, etc. 
+</p>
+       
+<p>
+As a social network based on collective production in an open and accessible corpus of works -- and works-in-progress -- Github facilitates unprecedented knowledge-sharing and mass collaboration, and affords researchers access to rich datasets, about which insights can be gained over the interdependence of creators and artefacts, how these entities interact over the lifecycle of a project, and the propagation of ideas. The ability to freely contribute to research, creation, and research-creation repositories and concurrently analyze their content and social structure both quantitatively -- i.e. usage metrics, pattern recognition on the contents of the docs, etc -- and qualitatively -- i.e. ethnographic study of the commit messages, grounded theory analysis of issue or bug messages, etc -- is perhaps of particular interest to performance studies. 
+
+<p>
+This is significant in that the author has in past solo endeavours opted to work in long sprints of activity between documentation. What documentation does emerge from these processes is at most frequent made in haste following the end of a session. This coarse degree of resolution has, at times, hindered future efforts to speculate on decisions made, and to imagine recourse for ongoing work. Further, it has been the experience of this author that such an opaque visibility of the decision-making in a creative work impedes its opening up to future collaboration. [cite the following:] that increased frequency of work contribution segmentations coincide with greater reflexivity in process, and aid in cognitive load.
+</p>
+
+<p>
+With the use of a public repository, creators open their work to early review and evaluation by others in contexts that may differ from their own. In git, a user can copy a repository belonging to another through an action called <i>forking</i>. Forking facilitates two essential workflows in the social network of git: one can alter the copied repository and propose these modifications to the intial project owner; or they can use this copy as either the starting point -- or introducing it in tandem with -- their own project, thereby embracing a project-based learning approach. Forking a repository generates a connection between one user and another, thereby expanding or strengthening community structure. (Bird et al. 2) Following a distributed creativity view of cultural production, </p>
 
 <p class="blockquote2"> “Creative action does not end with producing a certain outcome but requires, as an integral part, the social validation of the result, its appreciation by other people, primarily experts or gatekeepers (constituting the field) within art, science, technology, etc. (Constituting the domain). In this sense the production of what is creative is distributed both between people and across time.” (Glaveanu 25) </p>
 
 <p> Participation in the social network of a VCS embraces communalism, (Crowston et al 7:2) and is consistent with Harvie's notion of <i>craftmanship</i>, where "...craftmanship in contemporary art and performance practices [are considered] to explore how it might help value art, labour and quality not for their financial profit, but rather for their own sakes, and, in so doing, how it might offer a model of production marked not by individual self-interest but by social interdependence and egalitarianism." (Harvie 109) 
 
-“To create means to externalize or express, to generate an outcome that has a certain form of materiality without necessarily being an object but also a process, a performance, etc. 
+“To create means to externalize or express, to generate an outcome that has a certain form of materiality without necessarily being an object but also a process, a performance, etc." (Glaveanu 23)
 
 </p>
 
 <p></p>
-      <h4>The Commit as a Segmentation of Continuous Work</h4>
+<h4>The Commit as a Segmentation of Continuous Work</h4>
+<p></p>
 
-      <p>Following action-oriented ontology (Leman 2008), and distributed creativity, (Glaveanu —date) the acts of committing one’s work to, and pulling select work from, a repository, may be taken as segmentations of overall continuous work into discrete representations.</p> 
+<p>
+Following action-oriented ontology (Leman 2008), and distributed creativity, (Glaveanu —date) the acts of committing one’s work to, and pulling select work from, a repository, may be taken as segmentations of overall continuous work into discrete representations.
+</p> 
 
-      <p class="blockquote2">"It is precisely distribution in time that resolves the tension between stability and change. Only when we operate with a static, a-temporal perspective are we able to isolate single segments within the uninterrupted flow of action and development, and evaluate them as either continuous with what came before or marking a rupture or discontinuity. In reality, ruptures are continuous with the past and continuity is achieved through change and transformation. This conclusion emerges, however, only when we add time to our view of creative action and, more than this, when we are able to operate developmentally, with multiple time frames.” (Glaveanu 72) </p>
+<p class="blockquote2">"It is precisely distribution in time that resolves the tension between stability and change. Only when we operate with a static, a-temporal perspective are we able to isolate single segments within the uninterrupted flow of action and development, and evaluate them as either continuous with what came before or marking a rupture or discontinuity. In reality, ruptures are continuous with the past and continuity is achieved through change and transformation. This conclusion emerges, however, only when we add time to our view of creative action and, more than this, when we are able to operate developmentally, with multiple time frames.” (Glaveanu 72) </p>
 
-      <p> can then connect the gesture of making a commit to an embodied practice (Taylor 3)
+<p> can then connect the gesture of making a commit to an embodied practice (Taylor 3)
 
-      <p> following Victor Turner's definition of performance through the "French etymological root, parfournir," (Taylor 3) [then Taylor cites Turner with to 'carry out thoroughly'] The carrying out thoroughly would seem consistent with the mantra of open source software design of commit early and often, which deems peer-review of code as essential towards building and maintaining useful and functioning codebases. [need to cite this]
+<p> following Victor Turner's definition of performance through the "French etymological root, parfournir," (Taylor 3) [then Taylor cites Turner with to 'carry out thoroughly'] The carrying out thoroughly would seem consistent with the mantra of open source software design of commit early and often, which deems peer-review of code as essential towards building and maintaining useful and functioning codebases. [need to cite this]
 
-
-
-
-      <p>
-      In addition to being paired with an author's comment about its purpose, a commit is also tagged with such metadata as time, IP address, file(s), and the differences between the versions of files when compared to the previous commit containing a given file. Considering a commit as a representation of segmented overall work may problematize the formalization of a temporal unit of work, and depend greatly on habits of the author. [[fold in study on commit message practices from research]]
-      </p>
+<p>
+In addition to being paired with an author's comment about its purpose, a commit is also tagged with such metadata as time, IP address, file(s), and the differences between the versions of files when compared to the previous commit containing a given file. Considering a commit as a representation of segmented overall work may problematize the formalization of a temporal unit of work, and depend greatly on habits of the author. [[fold in study on commit message practices from research]]
+</p>
 
 <p></p>
-      <h2>Mining the Repository of This Paper</h2>
 
-      <p>
-      
-      To illustrate this repository's ontogenesis, or how it grew over the course of its development, the visualization tool <a href="http://gource.io" target="_blank">Gource</a> (Caudwell 2009) has been implemented to provide an animation of the commit history and evolving structure of the repository over time. 
+<h2>Mining the Repository of This Paper</h2>
+<p></p>
 
-      <video width="560" height="340" controls> <source src="gource.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'> <source src="gource.mp4" type='video/ogg; codecs="theora, vorbis"'> </video>
+<p>
+To illustrate this repository's ontogenesis, or how it grew over the course of its development, the visualization tool <a href="http://gource.io" target="_blank">Gource</a> (Caudwell 2009) has been implemented to provide an animation of the commit history and evolving structure of the repository over time. 
 
-      <p>
-      A habit developed early on in the process of writing this paper, that saw commit messages as becoming a secondary locus for reflection about the content of the changed documents, writing in dialog with the ideas expressed in the commit, such as <a href="https://github.com/michaelpalumbo/self-referent/commit/56de6878cf14df906aeb4f40b3f6130dcf2d2d58" target="_blank">this commit</a>, which began as a note about missing some content from the course, and led to some musing on possible sources and ideas to fold into further discussion. 
+      <p class="indented"><video width="560" height="340" controls> <source src="gource.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'> <source src="gource.mp4" type='video/ogg; codecs="theora, vorbis"'> </video>
+      </p>
+
+<p>
+A habit developed early on in the process of writing this paper, that saw commit messages as becoming a secondary locus for reflection about the content of the changed documents, writing in dialog with the ideas expressed in the commit, such as <a href="https://github.com/michaelpalumbo/self-referent/commit/56de6878cf14df906aeb4f40b3f6130dcf2d2d58" target="_blank">this commit</a>, which began as a note about missing some content from the course, and led to some musing on possible sources and ideas to fold into further discussion. 
       </p>
 
       <p>
