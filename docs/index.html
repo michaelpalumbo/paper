@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<style> .indented { padding-left: 50pt; padding-right: 50pt; } .blockquote2 { padding-left: 70pt; padding-right: 50pt; }</style> 
+<style> .indented { padding-left: 50pt; padding-right: 50pt; } .blockquote2 { padding-left: 70pt; padding-right: 50pt; } .caption { padding-left: 70pt; padding-right: 50pt; }</style> 
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <title>Using git to write a paper about doing research-creation using git</title>
@@ -36,36 +36,33 @@
       </p> -->
 <h3>Abstract</h3>
       <p>
-        The ability to keep track of changes made by a creator over the course of a project's timeline is beneficial to many facets of production. This includes revision, editing, moving between drafts, and collecting and implementing feedback. Collaboration between individuals, whether locally or spatio-temporally distributed, requires greater scaffolding of communication and transmission of artefacts, such as facilitating concurrent access to the developing corpus of work, effectively managing how work and knowledge about the work-in-progress are shared, and enabling efficient movement between drafts and revisions. In the field of software engineering, <i>version control systems (VCS) </i> are employed by developers to mitigate these issues by storing code in digital archives called repositories — which contain details about the history of the project, contributions, and other useful metrics (Bird et al. 2009; Carlsson 2013). VCS are not limited to the archiving and transmission of code. In the spirit of the important contribution of Diana Taylor's advocation for a convergence of Perfomance Studies and Latin American Studies scholarship towards "...a real engagement between two fields that helps us rethink both" (Taylor XVIII), this paper examines the potential that VCS may offer to research-creation in the context of theatre and performance studies. With this in mind by leveraging the use of the VCS <i>git</i> to document and analyze its -- the paper's -- own socio-technical ontogenesis, or its "...coming into being." (Boesch 182) 
+        The ability to keep track of changes made by a creator over the course of a project's timeline is beneficial to many facets of production. This includes revision, editing, moving between drafts, and collecting and implementing feedback. Collaboration between individuals, whether locally or spatio-temporally distributed, requires greater scaffolding of communication and transmission of artefacts, such as facilitating concurrent access to the developing corpus of work, effectively managing how work and knowledge about the work-in-progress are shared, and enabling efficient movement between drafts and revisions. In the field of software engineering, <i>version control systems (VCS) </i> are employed by developers to mitigate these issues by storing code in digital archives called repositories, which also contain details about the history of the project, contributions, and other useful metrics (Bird et al. 2009; Carlsson 2013). VCS are not limited to the archiving and transmission of code. In the spirit of the important contribution of Diana Taylor's advocation for a convergence of Perfomance Studies and Latin American Studies scholarship towards "...a real engagement between two fields that helps us rethink both," (Taylor XVIII) this paper examines the potential that VCS may offer to research-creation in the context of theatre and performance studies. Drawing on distributed creativity, which extends "creative processes into the world of others, of objects ... [and of environments, and observes] how they unfold in time," (Glaveanu 23) a VCS has been used to write, document and analyze this paper's own socio-technical ontogenesis, or its "...coming into being." (Boesch 182) 
+
 
         <!--This paper presents a vision towards Drawing on literature from performance studies, distributed creativity, and mining software repositories (MSR), this paper presents a vision towards use of VCS in the contexts of performance studies and distributed creativity research, and will leverage the VCS <i>git</i> as a research-creation tool in presenting a detailed account of this paper’s own ontogenesis. -->
 </p>
 <p></p>
 
 <h4>Background</h4>
+<p></p>
 <p> Interest in the deployment of VCS in disparate contexts is gaining momentum. Those engaged in the field of computer-supported collaborative learning (CSCL) has taken up interest in studying the effects of integrating VCS in the classroom. For example, Francese, Gravino, Risi, Scanniello, and Tortora (2015) present on the experiences of students using VCS in a course on developing software for mobile platforms, and assert the importance of leveraging project-based learning in the classroom. (Francese et al 1) Zagalsky, Feliciano, Storey, Zhao, and Wang (2015) focus on the educational potential of the social networking features within the cloud-based VCS <i>Github</i>, towards supporting collaborative learning and group work. (Zagalsky et al 1)
 </p>
 
-<p>Research into the implications of VCS in collaborative research and production are also on the rise, and can be found in such fields as computer-supported collaborative work (CSCW), and [...]. Kalliamvakou, Damian, Singer, and German (2014) show how using Github in team-based software development contributes to emergent organized activity, and positively affects the collaboration as defined by "...coordination, communication, awareness, task division, and conflict resolution." (Kalliamvakou et al 1) Crowston and Howison (2005) contucted a study on patterns of communication in open source software projects hosted in the online community SourceForge to demonstrate that as projects grow in size, their social networks become progressivley more decentralized, while project components fracture into increasing modularity. (Crowston and Howison 1)
+<p>Research into the implications of VCS in collaborative research and production are also on the rise, and can be found in such fields as computer-supported collaborative work (CSCW), and Human Factor in Computing Systems (CHI). Kalliamvakou, Damian, Singer, and German (2014) show how using Github in team-based software development contributes to emergent organized activity, and positively affects collaboration as defined by "...coordination, communication, awareness, task division, and conflict resolution." (Kalliamvakou et al 1) Crowston and Howison (2005) conducted a study on patterns of communication in open source software projects hosted in the online community SourceForge to demonstrate that as projects grow in size, their social networks become progressivley more decentralized, while project components fracture into increasing modularity. (Crowston and Howison 1)
 
 </p>
 <p>
-Another area of research that has grown with the usage of VCS, including in such contexts as those mentioned above, is that of <i>mining software repositories (MSR)</i>. MSR is a practice used by software researchers to conduct both qualitative and quantitative analyses on repositories. Burlet and Hindle (2015) mined repositories belonging specifically to computer musicians who use visual programming language Max/MSP , finding that "...in comparison to the general population of software developers, computer musicians' repositories have less commits, less frequent commits, more commits on weekends, yet similar numbers of bug reports and similar numbers of contributing authors." (Burlet and Hindle 292) By focusing on the code contained within a repository, researchers can infer about how ideas develop and propagate. Using an analysis method called clone detection, Burlet and Hindle (2015) found that "...the vast majority of code [within these repositories] can be reconstructed from duplicate fragments," (Burlet and Hindle 293) indicating that computer musicians as designers of their own instruments frequently replicate sections of their code. This would be consistent with the design of any instrument that contains more than one -- or variations -- of the same component, such as the strings of a guitar. 
+Another area of research that has grown with the usage of VCS, including in such contexts as those mentioned above, is that of <i>mining software repositories (MSR)</i>. MSR is a practice used by researchers to conduct both quantitative and qualitative analyses on repositories. Burlet and Hindle (2015) mined repositories belonging specifically to computer musicians who use visual programming language Max/MSP , finding that "...in comparison to the general population of software developers, computer musicians' repositories have less commits, less frequent commits, more commits on weekends, yet similar numbers of bug reports and similar numbers of contributing authors." (Burlet and Hindle 292) By focusing on the code contained within a repository, researchers can infer how ideas develop and propagate. Using an analysis method called clone detection, Burlet and Hindle (2015) found that "...the vast majority of code [within these repositories] can be reconstructed from duplicate fragments," (Burlet and Hindle 293) indicating that computer musicians as designers of their own instruments frequently replicate sections of their code. This would be consistent with the design of any instrument that contains more than one -- or variations -- of the same component, such as the strings of a guitar. 
 </p>
+
+
 <p>
 Concerned also with the study of populations of users who participate in the use of VCS, MSR can provide researchers with insights such as the co-evolution of a project's artefacts and its contributor base, and how these systems augment collective work processes and how workflows emerge and adapt to project goals. Vasilescu, Serebrenik, and Filkov (2015) used MSR to produce a "...large data set of social diversity attributes of programmers in GITHUB [sic] teams... [culled from] 23,493 GITHUB projects." (Vasilescu et al 1) Bird, Pattison, D'Souza, Filkov, and Devanbu (2008) analyzed archived communications within mailing lists of three open source software projects, detailing "...emergent social structure and its relationship to technical activities." (Bird et al. 2008)  
 </p>
 
-<p>
-Through the use of a public repository, creators open their work to early review and multidirectional propagations of ideas [cite]. A distributed creativity view of cultural production would take that </p>
-
-<p class="blockquote2"> “Creative action does not end with producing a certain outcome but requires, as an integral part, the social validation of the result, its appreciation by other people, primarily experts or gatekeepers (constituting the field) within art, science, technology, etc. (Constituting the domain). In this sense the production of what is creative is distributed both between people and across time.” (Glaveanu 25) </p>
-
-<p> Consistent with Free/Libre Open Source Software (FLOSS) culture, which embraces a communalism toward software development, (Crowston et al 7:2) is also the "...has been described as community-based development" (cite) [[draw comparison with Harvie's 'craftmanship' (Harvie 109) where "I consider craftmanship in contemporary art and performance practices to explore how it might help value art, labour and quality not for their financial profit, but rather for their own sakes, and, in so doing, how it might offer a model of production marked not by individual self-interest but by social interdependence and egalitarianism." Motivated away from a proprietary and sense of ownership -- A mode of communalism that [[atlruism need to find a better word than painting the entire coding community in one light, without knowing their intentions]] can be observed in the behaviour of software developers towards helping each other solve problems, as evidenced in the online community StackOverflow.com, which provides forums for programmers to ask and provide help in programming related issues.]] 
-</p>
 <p></p>
 
-<h4>Two Version Control Systems Topologies: Centralized and Decentralized</h4>
+<h4>Two Version Control System Topologies: Centralized and Decentralized</h4>
       <p>
       VCS are tasked with storing and transferring current and past versions of work in digital archives referred to as repositories. In contemporary VCS, repositories are hosted in the cloud. In <i>centralized version control (CVC)</i> systems, such as Subversion and Concurrent Versioning System [cite], repositories are contained within a single remote location, permitting developers temporary access to a portion of the codebase for modification. [cite] <i>Decentralized version control (DVC)</i>, by contrast, is an example of a distributed approach to VCS, and operates on a peer-to-peer model, enabling the entire repository to be stored locally on all machines affiliated with the project. (O’Sullivan 2009)  This facilitates temporally and geographically displaced contributions, offline work, and simultaneous document editing. (Kalliamvakou et al 2014)            
       </p>
@@ -73,8 +70,10 @@ Through the use of a public repository, creators open their work to early review
        <p>
        A popular DVC is git, which is run within a computer's command line interface, such as the terminal in Unix-based operating systems like Mac OS X and Linux. The workflow used to write this paper with git can be distilled to five terminal commands: <i>git status</i>, <i>git pull</i>, <i>git add</i>, <i>git commit</i>, and <i>git push</i>, where:
 
-            
-      <p class="indented"><i>git add [filename]</i> tells git the name of a modified file to send to the remote as the newest version </p>
+       
+       <p class="indented"><i>git status</i> reports the state of the local repository in comparison to the most recent commit</p> 
+
+      <p class="indented"><i>git add [filename]</i> tells git to track a file with the specified filename. An alternate command -- and one used quite frequently throughout the composition of this paper was <i>git add .</i>, which tells git to track all recently modified, added, or deleted files </p>
 
        <p class="indented"><i>git commit</i> is the logging of the modification of work from the local repository to what is referred to as the staging area. A commit also contains a description of the change and reason(s) for its occurrence, written by the author of the change. An author can -- and typically does -- make multiple commits over the course of a work session</p>
 
@@ -82,10 +81,10 @@ Through the use of a public repository, creators open their work to early review
 
        <p class="indented"> <i>git pull</i> is the retrieval of the most-recent version of the master repository from the cloud to a local repository on the author's machine </p>
 
-       <p class="indented"><i>git status</i> reports the state of the local repository in comparison to the most recent commit</p> 
+       
       
       <p class="indented"><img src="DVC-model.jpg" alt="DVC-model" style="width:735px;height:233px;"></p>
-      <p class="indented"><h4>Decentralized Version Control with git</h4> </p>
+      <h4 style="padding-left: 50pt">Figure 1: Decentralized Version Control with git</h4> </p>
       
 
       <p>
@@ -102,11 +101,16 @@ Through the use of a public repository, creators open their work to early review
       This is significant in that the author has in past solo endeavours opted to work in long sprints of activity between documentation. What documentation does emerge from these processes is at most frequent made in haste following the end of a session. This coarse degree of resolution has, at times, hindered future efforts to speculate on decisions made, and to imagine recourse for ongoing work. Further, it has been the experience of this author that such an opaque visibility of the decision-making in a creative work impedes its opening up to future collaboration. [cite the following:] that increased frequency of work contribution segmentations coincide with greater reflexivity in process, and aid in cognitive load.
       </p>
 
+<p>
+Through the use of a public repository, creators open their work to early review and evaluation by others in contexts that may differ from their own. In git, a user can copy a repository belonging to another through an action called <i>forking</i>. Forking facilitates two essential workflows in the social network of git: one can alter the copied repository and propose these modifications to the intial project owner; or they can use this copy as either the starting point -- or introducing it in tandem with -- their own project, thereby embracing a project-based learning approach. Forking a repository generates a connection between one user and another, thereby expanding or strengthening community structure. (Bird et al. 2) Following a distributed creativity view of cultural production, </p>
 
-<p></p>
+<p class="blockquote2"> “Creative action does not end with producing a certain outcome but requires, as an integral part, the social validation of the result, its appreciation by other people, primarily experts or gatekeepers (constituting the field) within art, science, technology, etc. (Constituting the domain). In this sense the production of what is creative is distributed both between people and across time.” (Glaveanu 25) </p>
 
-<h4>Distributed Creativity, Open Source, and Thwarting Modernist Ideals</h4>
-Plan:
+<p> Participation in the social network of a VCS embraces communalism, (Crowston et al 7:2) and is consistent with Harvie's notion of <i>craftmanship</i>, where "...craftmanship in contemporary art and performance practices [are considered] to explore how it might help value art, labour and quality not for their financial profit, but rather for their own sakes, and, in so doing, how it might offer a model of production marked not by individual self-interest but by social interdependence and egalitarianism." (Harvie 109) 
+
+“To create means to externalize or express, to generate an outcome that has a certain form of materiality without necessarily being an object but also a process, a performance, etc. 
+
+</p>
 
 <p></p>
       <h4>The Commit as a Segmentation of Continuous Work</h4>
@@ -144,7 +148,13 @@ Plan:
       </p>
 
 <h4>Co-evolution of Artist and Artefacts</h4>
-<p> Distributed creativity holds the position that Glaveanu points to the condition of human creators in "Humans do not simply adapt to systems. They [also] shape them. How do we recognize elements such as choice, timing, and self-presentation except through the ways in which individuals and groups perform them?" (Taylor 7)
+<p> Harvie's notion of interdependence in craftmanship is congruent also with a distributed creativity emphasis on the "...dynamic co-evolution between person and environment," (Glaveanu 73) A symbiotic relationship between an artist and their community dispells the modernist interpretation of genius. 
+
+
+
+Taylor also 
+
+"a temporally distributed account of creativity focusing on the entire lifespan distributed creativity view that also points to the propensity for a co-evolution of creator(s), artifact(s), and environment(s).  "Humans do not simply adapt to systems. They [also] shape them. How do we recognize elements such as choice, timing, and self-presentation except through the ways in which individuals and groups perform them?" (Taylor 7)
 
 <p> In comparing commits across the timeline, there appears a tendency in the early commits to perform an intelligence about the subject at hand at such an early stage in the development of the project, to suggest that "I know what I'm talking about" to potential future readers of the commit history. For example:
 </p>
