@@ -27,6 +27,7 @@
 
 <p> </p>
 <h1>Self-referent</h1>
+<p></p>
 
       <!--<p>
         This is an experiment in his paper presents a vision towards the use of version control systems and repository mining in the contexts of performance studies and creativity research, and will leverage git as a research-creation tool in presenting a detailed account of this paper’s own ontogenesis, such as: excerpts from the author’s commit comments; visualizations of the comparison of changes; and trends in the author’s process, including attentional detail and affect.
@@ -39,6 +40,8 @@
 
         <!--This paper presents a vision towards Drawing on literature from performance studies, distributed creativity, and mining software repositories (MSR), this paper presents a vision towards use of VCS in the contexts of performance studies and distributed creativity research, and will leverage the VCS <i>git</i> as a research-creation tool in presenting a detailed account of this paper’s own ontogenesis. -->
 </p>
+<p></p>
+
 <h4>Background</h4>
 <p> Interest in the deployment of VCS in educational contexts is gaining momentum, particularly in the field of computer-supported collaborative learning (CSCL). For example, Francese, Gravino, Risi, Scanniello, and Tortora (2015) present on the experiences of students using VCS in a course on developing software for mobile platforms, and assert the importance of leveraging project-based learning in the classroom. (Francese et al 1) Zagalsky, Feliciano, Storey, Zhao, and Wang (2015) focus on the educational potential of the social networking features within the cloud-based VCS <i>Github</i>, towards supporting collaborative learning and group work. (Zagalsky et al 1)
 </p>
@@ -52,6 +55,8 @@ Another area of research that has grown with the usage of VCS, including in such
 <p>
 Concerned also with the study of populations of users who participate in the use of VCS, MSR can provide researchers with insights such as the co-evolution of a project's artefacts and its contributor base, and how these systems augment collective work processes and how workflows emerge and adapt to project goals. Vasilescu, Serebrenik, and Filkov (2015) used MSR to produce a "...large data set of social diversity attributes of programmers in GITHUB [sic] teams... [culled from] 23,493 GITHUB projects." (Vasilescu et al 1) Bird, Pattison, D'Souza, Filkov, and Devanbu (2008) analyzed archived communications within mailing lists of three open source software projects, detailing "...emergent social structure and its relationship to technical activities." (Bird et al. 2008)  
 </p>
+
+<p></p>
 
 <h4>Two Version Control Systems Topologies: Centralized and Decentralized</h4>
       <p>
@@ -90,22 +95,27 @@ Concerned also with the study of populations of users who participate in the use
       This is significant in that the author has in past solo endeavours opted to work in long sprints of activity between documentation. What documentation does emerge from these processes is at most frequent made in haste following the end of a session. This coarse degree of resolution has, at times, hindered future efforts to speculate on decisions made, and to imagine recourse for ongoing work. Further, it has been the experience of this author that such an opaque visibility of the decision-making in a creative work impedes its opening up to future collaboration. [cite the following:] that increased frequency of work contribution segmentations coincide with greater reflexivity in process, and aid in cognitive load.
       </p>
 
-      <h4>Mining the Repository of This Paper</h4>
-
+<p></p>
       <h4>The Commit as a Segmentation of Continuous Work</h4>
 
       <p>Following action-oriented ontology (Leman 2008), and distributed creativity, (Glaveanu —date) the acts of committing one’s work to, and pulling select work from, a repository, may be taken as segmentations of overall continuous work into discrete representations. In addition to being paired with an author's comment about its purpose, a commit is also tagged with such metadata as time, IP address, file(s), and the differences between the versions of files when compared to the previous commit containing a given file. 
 
       I bring this up because were we to think of commits as the segmentation of work contributions, the temporal unit of segmentation is as yet not formalized, and may depend on other aspects, such as the habits of the developer, as well as the conditions the developer's work environment [i.e. internet connectivity, others?] . In a lab context, like that of the Dispersion Lab, a proper zero state includes the repository being fully up to date before leaving; or a variance in lab members’ permissions in github use. In our case, we mostly opted to commit at the end of a given work session, but there were instances where commits occurred more frequently (when two or more researchers were co-developing) within a session, and also less frequently (in the earliest stages, I was the only one doing commits; then when others were taught how to do it, we each would sometimes forget to do it; and another occurrence was when there was a merge conflict, so the commit was abandoned until the next time I could resolve it). 
 
+<p></p>
+      <h4>Mining the Repository of This Paper</h4>
+
+      <p>
+      
+      To illustrate this repository's ontogenesis, or how it grew over the course of its development, the visualization tool <a href="http://gource.io" target="_blank">Gource</a> (Caudwell 2009) has been implemented. As can be seen below, the commit history and the evolving structure of the repository over time are represented in an animation. 
+
+      <video width="560" height="340" controls> <source src="gource.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'> <source src="gource.mp4" type='video/ogg; codecs="theora, vorbis"'> </video>
 
       <p>
       A habit developed early on in the process of writing this paper, that saw commit messages as becoming a secondary locus for reflection about the content of the changed documents, writing in dialog with the ideas expressed in the commit, such as <a href="https://github.com/michaelpalumbo/self-referent/commit/56de6878cf14df906aeb4f40b3f6130dcf2d2d58" target="_blank">this commit</a>, which began as a note about missing some content from the course, and led to some musing on possible sources and ideas to fold into further discussion. 
       </p>
 
-
-
-       <p>
+      <p>
       This development is comparable to the concept of the mental model <i>rubber duck debugging</i>, where one describes an idea to a rubber duck, or some other "... inanimate [object] ... forcing the explainer to clarify and structure the explanation" (Phillips et al 2013) as a means of thinking reflexively about an idea. [[to follow this would be the study on commit messages, which I think is about best practices -- but that the act of a commit is to make known to future readers (including oneself) one's act of making change(s) to a document.  ]]
       </p>
 
@@ -133,18 +143,7 @@ Concerned also with the study of populations of users who participate in the use
       
       </p>
 
-      <p>
-      
-     
-      On Vizualisation: 
-
-
-
-      To illustrate how a repository grows over time, an author could make use of repository vizualisation tools. One such tool is <a href="http://gource.io" target="_blank">Gource</a> (Caudwell 2009). As can be seen below, the commit history and the evolving structure of the repository are represented in an animation. 
-
- <video width="560" height="340" controls> <source src="gource.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'> <source src="gource.mp4" type='video/ogg; codecs="theora, vorbis"'> </video>
- 
-      over time paper as a work-in-progress over time and through coone method of making sense of data in a repository is to visualize the history of the commits.      One method of making sense of 
+  
 
 <!--see in particular: 
 
