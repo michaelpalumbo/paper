@@ -1,0 +1,9 @@
+“It is precisely distribution in time that resolves the tension between stability and change. Only when we operate with a static, a-temporal perspective are we able to isolate single segments within the uninterrupted flow of action and development, and evaluate them as either continuous with what came before or marking a rupture or discontinuity. In reality, ruptures are continuous with the past and continuity is achieved through change and transformation. This conclusion emerges, however, only when we add time to our view of creative action and, more than this, when we are able to operate developmentally, with multiple time frames.” (Glaveanu 72)
+
+another example, however, can be that they are working on the same project at the same time on different computers. Although the commits will be made at different times —and thus the markers of change appear to suggest asynchronous development — the “change and transformation” (72)
+
+[ so one example may be: one or more researchers working on a given lab project, but are working asynchronously (temporally). 
+
+ of the codebase is continuous.
+
+Further, and this is especially pertinent to the earliest phases of lab work (fall 2016), most of the changes to code made by all lab members were committed only by one person. ]” (Glaveanu 72)
