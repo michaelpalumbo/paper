@@ -1,39 +1,4 @@
 
-# Background
+# Abstract
 
-This paper presents a vision towards the use of version control systems and repository mining in the contexts of performance studies and creativity research, and will leverage git as a research-creation tool in presenting a detailed account of this paper’s own ontogenesis, such as: excerpts from the author’s commit comments; visualizations of the comparison of changes; and trends in the author’s process, including attentional detail and affect. 
-
-The finished version of this papge will be the paper, including hypertext, tables, and embedded video of vizualizations. 
-
-Below is the template provided by github to help me build this paper using markdown!
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/michaelpalumbo/paper/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+The ability to keep track of changes made by a creator over the course of a project's timeline is beneficial to many facets of production. This includes revision, editing, moving between drafts, and collecting and implementing feedback. Collaboration between individuals, whether locally or spatio-temporally distributed, requires greater scaffolding of communication and transmission of artefacts, such as facilitating concurrent access to the developing corpus of work, effectively managing how work and knowledge about the work-in-progress are shared, and enabling efficient movement between drafts and revisions. In the field of software engineering, <i>version control systems (VCS) </i> are employed by developers to mitigate these issues by storing code in digital archives called repositories, which also contain details about the history of the project, contributions, and other useful metrics (Bird et al. 2009; Carlsson 2013). VCS are not limited to the archiving and transmission of code. In the spirit of the important contribution of Diana Taylor's advocation for a convergence of Perfomance Studies and Latin American Studies scholarship towards "...a real engagement between two fields that helps us rethink both," (Taylor XVIII) this paper examines the potential that VCS may offer to research-creation in the context of theatre and performance studies. Drawing on distributed creativity, which extends "creative processes into the world of others, of objects ... [and of environments, and observes] how they unfold in time," (Glaveanu 23) a VCS has been used to write, document and analyze this paper's own socio-technical ontogenesis, or its "...coming into being." (Boesch 182)
