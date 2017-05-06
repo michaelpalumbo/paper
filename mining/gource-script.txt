@@ -1,5 +1,4 @@
 gource \
-    -s .06 \
     -1280x720 \
     --auto-skip-seconds .1 \
     --multi-sampling \
